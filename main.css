@@ -109,9 +109,10 @@ h2 {
   width: 20rem;
 }
 
-.bullet--icons  {
+.bullet--icons {
   list-style: none;
 }
+
 .skills--container {
   width: 303px;
   height: auto;
