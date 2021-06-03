@@ -98,7 +98,8 @@ h1 {
   color: #c8c8d4;
   flex: none;
   order: 0;
-  flex-grow: 0; 
+  flex-grow: 0;
+
 }
 
 .devider {
@@ -115,7 +116,6 @@ h1 {
   padding: 10px 12px 0 30px;
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-between;
 }
 
