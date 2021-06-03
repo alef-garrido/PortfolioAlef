@@ -1,16 +1,18 @@
 :root {
   /* Colores */
   --background: #191765;
-  --primary-2: #7D73FC;
-  --primary-3: #9490FF;
+  --primary-2: #7d73fc;
+  --primary-3: #9490ff;
 }
 body {
+
   display: flex;
   width: auto;
   height: auto;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
   background-color: var(--background);
+
 }
 header {
   position: absolute;
@@ -18,7 +20,7 @@ header {
   height: 92px;
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 header a {
     padding-right: 15px;
