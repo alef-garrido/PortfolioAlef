@@ -38,7 +38,7 @@ h1 h2 h3 h4 h5 h6 p {
   color: aliceblue;
 }
 
-h1 {
+h2 {
   position: static;
   width: 327px;
   height: 87px;
@@ -67,7 +67,7 @@ h1 {
   background-position-y: center;
 }
 
-.headline--container h2 {
+.headline--container h1 {
   position: static;
   width: 327px;
   height: 55px;
@@ -109,6 +109,9 @@ h1 {
   width: 20rem;
 }
 
+.bullet--icons  {
+  list-style: none;
+}
 .skills--container {
   width: 303px;
   height: auto;
@@ -118,19 +121,20 @@ h1 {
   justify-content: space-between;
 }
 
-.skills--item {
+.skills--item ul {
   width: 150px;
 }
 
-.skills--container h3 {
+.skills--container li h3 {
   font-size: 12px;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
   color: var(--primary-2);
 }
 
-.skills--container p {
+.skills--container li {
   font-size: 15px;
-  padding-bottom: 0.25rem;
+  padding-bottom: 1rem;
+  color: aliceblue;
 }
 
 .supporting-item-container {
