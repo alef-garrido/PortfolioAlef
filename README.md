@@ -10,6 +10,9 @@
 
 - HTML5
 - CSS3
+## Live Demo
+
+[Live Demo Link](https://alef-garrido.github.io/PortfolioAlef/)
 
 ## Authors
 
@@ -17,5 +20,5 @@
 
 - GitHub: [@alef-garrido](https://github.com/alef-garrido)
 - Twitter: [@alefLemat](https://twitter.com/AlefLemat)
-- LinkedIn: [/alef-g(https://www.linkedin.com/in/alef-g/)
+- LinkedIn: [/alef-g](https://www.linkedin.com/in/alef-g/)
 
