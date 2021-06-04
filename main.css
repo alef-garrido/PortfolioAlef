@@ -204,6 +204,7 @@ h1 h2 h3 h4 h5 h6 p {
   color: var(--primary-3);
   line-height: 52px;
   font-weight: 500;
+  padding-left: 20px;
   padding-bottom: 24px;
 }
 
