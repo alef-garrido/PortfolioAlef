@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  position:absolute;
+  position: absolute;
   width: 375px;
   height: 92px;
   display: flex;
@@ -138,6 +138,16 @@ h1 h2 h3 h4 h5 h6 p {
   width: 150px;
 }
 
+.card--content h3 {
+  width: 327px;
+  height: 105px;
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  padding-top: 2rem;
+}
+
 .skills--container li h3 {
   font-size: 12px;
   padding-bottom: 0.25rem;
@@ -179,7 +189,7 @@ h1 h2 h3 h4 h5 h6 p {
   margin: 40px 0;
 }
 
-/*Recent work section */
+/* Recent work section */
 
 .section--tittle {
   height: 145px;
@@ -201,11 +211,11 @@ h1 h2 h3 h4 h5 h6 p {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   justify-content: center;
-
-  background-image: url(./assets/img/Ellipse19@2x.png), 
+  background-image: url(./assets/img/Ellipse19@2x.png),
   url(./assets/img/Ellipse19@2x.png);
-  background-repeat: no-repeat, 
-  no-repeat;
+  background-repeat: 
+    no-repeat,
+    no-repeat;
   background-size: 70%, 70%;
   background-position-y: 80px, 150px;
 }
@@ -215,9 +225,8 @@ h1 h2 h3 h4 h5 h6 p {
   width: 327px;
   padding-top: 2.5rem;
   padding-bottom: 2rem;
-  
   display: flex;
-  flex-wrap: wrap;   
+  flex-wrap: wrap;
 }
 
 .card--thumbnail {
@@ -226,20 +235,9 @@ h1 h2 h3 h4 h5 h6 p {
 }
 
 .card--content {
-  display:flex ;
+  display: flex;
   flex-wrap: wrap;
   width: 324px;
-
-}
-
-.card--content h3 {
-  width: 327px;
-  height: 105px;
-  margin: 20px 0;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 44px;
-  padding-top: 2rem;
 }
 
 .card--content p {
@@ -247,7 +245,7 @@ h1 h2 h3 h4 h5 h6 p {
   height: 204px;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
-  line-height: 28px; 
+  line-height: 28px;
 }
 
 .card--content ul {
@@ -262,7 +260,6 @@ h1 h2 h3 h4 h5 h6 p {
   display: flex;
   justify-content: space-between;
   align-items:center;
-
 }
 
 .card--btn {
@@ -272,6 +269,3 @@ h1 h2 h3 h4 h5 h6 p {
   background-color: var(--primary-2);
   border: none;
 }
-
-
-
