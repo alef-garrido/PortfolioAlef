@@ -211,9 +211,10 @@ h1 h2 h3 h4 h5 h6 p {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   justify-content: center;
-  background-image: url(./assets/img/Ellipse19@2x.png),
-  url(./assets/img/Ellipse19@2x.png);
-  background-repeat: 
+  background-image: 
+    url(./assets/img/Ellipse19@2x.png),
+    url(./assets/img/Ellipse19@2x.png);
+  background-repeat:
     no-repeat,
     no-repeat;
   background-size: 70%, 70%;
@@ -259,7 +260,7 @@ h1 h2 h3 h4 h5 h6 p {
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
 }
 
 .card--btn {
