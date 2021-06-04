@@ -211,7 +211,7 @@ h1 h2 h3 h4 h5 h6 p {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   justify-content: center;
-  background-image: 
+  background-image:
     url(./assets/img/Ellipse19@2x.png),
     url(./assets/img/Ellipse19@2x.png);
   background-repeat:
