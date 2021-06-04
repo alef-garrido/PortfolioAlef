@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--text);
 }
 
 :root {
-  /* Colores */
+
   --background: #191765;
   --text: #e4e3fa;
   --primary-1: #9490ff;
@@ -19,6 +20,7 @@ body {
   height: auto;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
+  color: #c8c8d4;
   background-color: var(--background);
 }
 
