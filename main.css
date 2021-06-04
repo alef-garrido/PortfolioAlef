@@ -21,7 +21,7 @@ body {
   background-color: var(--background);
 }
 
-nav {
+header {
   position: absolute;
   width: 375px;
   height: 92px;
