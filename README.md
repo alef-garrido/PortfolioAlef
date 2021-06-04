@@ -4,6 +4,7 @@
 
 > Portfolio project from Microverse-Bootcamp - Block #1 : day 3 -.
 
+![screenshot](./app_screenshot.png)
 
 ## Built With
 
