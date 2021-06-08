@@ -16,9 +16,10 @@
 body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: auto;
   height: auto;
-  justify-content: center;
   font-family: 'Roboto', sans-serif;
   color: #c8c8d4;
   background-color: var(--background);
@@ -118,6 +119,7 @@ h1 h2 h3 h4 h5 h6 p {
 
 .devider {
   display: flex;
+  justify-content: center;
 }
 
 .devider img {
@@ -336,6 +338,7 @@ form > textarea {
   margin-top: 2em;
   box-sizing: border-box;
   border: none;
+  color: #303036;
 }
 
 form > button {
@@ -344,6 +347,11 @@ form > button {
   border: none;
   margin-top: 3em;
   background-color: #d58eeb;
+  cursor: pointer;
+}
+
+form > button:hover {
+  background-color: #503458 ;
 }
 
 form > input[type],
@@ -354,13 +362,23 @@ form > input[type],
 
 form > input[type]::placeholder,
 #msg::placeholder {
-
   color:#3d3c46
 }
 
 #msg {
   padding-top: 20px;
 }
+
+form > input:focus {
+  outline: 0;
+  border: 4px solid rgb(250, 37, 232);
+}
+
+form > textarea:focus {
+  outline: 0;
+  border: 4px solid rgb(250, 37, 232);
+}
+
 
 /* Footer */
 
@@ -370,6 +388,7 @@ form > input[type]::placeholder,
 }
 
 .footer--section {
+  width: 375px;
   display: flex;
   flex-direction: column;
   align-items: center;
