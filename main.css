@@ -15,6 +15,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   width: auto;
   height: auto;
   justify-content: center;
@@ -24,7 +25,7 @@ body {
 }
 
 header {
-  position: absolute;
+  position: relative;
   width: 375px;
   height: 92px;
   display: flex;
@@ -361,3 +362,25 @@ form > input[type]::placeholder,
   padding-top: 20px;
 }
 
+/* Footer */
+
+.footer--section hr {
+  width: 100%;
+  border-color: #615f5e;
+}
+
+.footer--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supporting-item-container:nth-child(2) {
+  margin: 25px 0 15px 0;
+}
+
+.footer--email {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 25px;
+}
