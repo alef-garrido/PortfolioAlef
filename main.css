@@ -5,8 +5,8 @@
   --primary-2: #7d73fc;
   --primary-3: #4c47e6;
   --ff: 'Roboto', sans-serif;
-  --aff: 'Inter'. serif;
-  --mb: 375px
+  --aff: 'Inter', serif;
+  --mb: 375px;
 }
 
 * {
@@ -17,7 +17,6 @@
 }
 
 body {
-  width: var(--ff);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -381,7 +380,6 @@ form > textarea:focus {
 }
 
 @media screen and (min-width: 768px) {
-  
   header {
     position: fixed;
     top: 0;
@@ -420,7 +418,6 @@ form > textarea:focus {
     background-image: url(./assets/img/TwoCircles.png);
     background-repeat: no-repeat;
     background-size: contain;
-    
   }
 
   .headline--title {
@@ -432,8 +429,8 @@ form > textarea:focus {
 
   .headline--container h1 {
     width: auto;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     color: var(--primary-1);
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -470,9 +467,9 @@ form > textarea:focus {
   }
 
   .skills--item {
-   width:10rem;
-   margin-right: 3rem;
-   margin-bottom: 3rem;
+    width: 10rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
   }
 
   .supporting-item-container {
@@ -483,7 +480,7 @@ form > textarea:focus {
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .social--icons--container {
     min-width: 200px;
     display: flex;
@@ -491,7 +488,7 @@ form > textarea:focus {
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .supporting-item-l {
     display: inline;
   }
@@ -504,7 +501,7 @@ form > textarea:focus {
     top: 64px;
     margin: 0;
   }
-  
+
   .recent--work--container {
     width: 100%;
     display: flex;
@@ -520,14 +517,13 @@ form > textarea:focus {
     display: none;
   }
 
-  .section--tittle  .desktop--title{
+  .section--tittle .desktop--title {
     display: inline-block;
     width: 80vw;
     align-self: baseline;
     padding-bottom: 3rem;
     font-family: var(--ff);
     text-align: left;
-    font-size: 4rem;
     color: var(--primary-1);
     font-size: 6.4rem;
     font-weight: 700;
@@ -541,7 +537,7 @@ form > textarea:focus {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
   }
-  
+
   .recent--work--card {
     grid-column: 1/4;
     width: inherit;
@@ -549,7 +545,11 @@ form > textarea:focus {
     padding-bottom: 8rem;
     display: flex;
   }
-  
+
+  .card--thumbnail {
+    flex: 3;
+  }
+
   .card--thumbnail:nth-child(odd) {
     margin-right: 3rem;
   }
@@ -558,20 +558,16 @@ form > textarea:focus {
     margin-left: 3rem;
   }
 
-  .card--thumbnail {
-    flex: 3;
-  }
-
   .card--thumbnail img {
     width: 100%;
     height: auto;
   }
-  
+
   .card--content {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .card--content p {
     width: 327px;
     height: 204px;
@@ -580,12 +576,12 @@ form > textarea:focus {
     line-height: 28px;
     color: var(--text);
   }
-  
+
   .card--content ul {
     list-style: none;
     font-family: 'Inter', sans-serif;
   }
-  
+
   .tech--container {
     width: 345px;
     margin-top: 2rem;
@@ -594,7 +590,7 @@ form > textarea:focus {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .card--btn {
     font-family: 'Inter', sans-serif;
     width: 89px;
@@ -603,7 +599,7 @@ form > textarea:focus {
     border: none;
     cursor: pointer;
   }
-  
+
   .card--btn:hover {
     background-color: #503458;
   }
@@ -618,7 +614,7 @@ form > textarea:focus {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     padding-bottom: 1em;
-  }  
+  }
 
   .footer--section {
     width: 100%;
