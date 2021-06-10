@@ -396,6 +396,11 @@ form > textarea:focus {
     padding-left: 15rem;
   }
 
+  .desktop--menu > a {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
   header a:hover {
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
@@ -423,11 +428,6 @@ form > textarea:focus {
     display: flex;
     align-items: center;
     padding-right: 15rem;
-  }
-
-  .desktop--menu > a {
-    font-size: 1.5rem;
-    text-decoration: none;
   }
 
   main {
