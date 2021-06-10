@@ -392,6 +392,10 @@ form > textarea:focus {
     transition-timing-function: linear, linear;
   }
 
+  header > a {
+    padding-left: 15rem;
+  }
+
   header a:hover {
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
@@ -413,10 +417,6 @@ form > textarea:focus {
 
   .header--menu--icon {
     display: none;
-  }
-
-  header > a {
-    padding-left: 15rem;
   }
 
   .desktop--menu {
@@ -653,7 +653,7 @@ form > textarea:focus {
   input:hover,
   textarea:hover {
     transform: translate(10px);
-    border: solid 3px var(--primary-1) ;
+    border: solid 3px var(--primary-1);
   }
 
   .footer--section {
