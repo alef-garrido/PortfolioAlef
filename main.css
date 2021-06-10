@@ -38,7 +38,7 @@ header {
 }
 
 header a {
-  padding-right: 15px;
+  margin-right: 15px;
 }
 
 .desktop--menu {
@@ -384,6 +384,31 @@ form > textarea:focus {
     position: fixed;
     top: 0;
     z-index: 99;
+  }
+
+  header a {
+    transition-property: border-bottom, padding-bottom;
+    transition-duration: 100ms, 100ms;
+    transition-timing-function: linear, linear;
+  }
+
+  header a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+  }
+
+  header a img {
+    animation: rotate-logo 1s linear;
+  }
+
+  @keyframes rotate-logo {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   .header--menu--icon {
