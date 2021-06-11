@@ -33,9 +33,8 @@ header {
   height: 92px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 2rem;
-  background-color: transparent;
 }
 
 header a {
@@ -47,26 +46,18 @@ header a {
 }
 
 main {
-  width: 100vw;
+  width: var(--mb);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .headline--container {
-  padding-top: 100px;
-  width: 100%;
+  margin-top: 100px;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./assets/svg/top\ circles.svg);
-  background-repeat: no-repeat;
-  background-size: 117% 100%;
-  background-position: 42% -227px;
-}
-
-.headline--title {
-  width: 80%;
 }
 
 .headline--container h1 {
@@ -81,7 +72,7 @@ main {
 }
 
 .headline--container h2 {
-  width: 81vw;
+  width: auto;
   padding-top: 1rem;
   color: var(--text);
   font-family: var(--aff);
@@ -104,7 +95,7 @@ main {
 }
 
 .skills--container {
-  width: 80%;
+  width: 80vw;
   margin-top: 4rem;
   padding-bottom: 1rem;
   display: flex;
@@ -115,7 +106,7 @@ main {
 }
 
 .skills--item {
-  width: 140px;
+  width: 150px;
   margin-bottom: 3rem;
 }
 
@@ -170,7 +161,7 @@ main {
   display: none;
 }
 
-.section--tittle .desktop--title {
+.desktop--title {
   display: none;
 }
 
@@ -198,26 +189,14 @@ main {
 /* Recent work section */
 
 .recent--work--container {
-  width: 100vw;
-  background-image:
-    url(./assets/img/Ellipse19@2x.png),
-    url(./assets/img/Ellipse20@2x.png),
-    url(./assets/img/Ellipse21@2x.png),
-    url(./assets/img/Ellipse22@2x.png);
-  background-repeat: no-repeat;
-  background-size: 80%, 52%, 60%, 60%;
-  background-position: 0% 6%, 108% 34%, 0% 64%, 101% 91%;
+  width: 90vw;
 }
 
 .section--tittle {
-  width: auto;
   height: 145px;
-  display: flex;
-  justify-content: center;
 }
 
 .section--tittle .mobile--title {
-  width: 87%;
   padding-bottom: 3rem;
   font-family: var(--ff);
   text-align: left;
@@ -228,14 +207,9 @@ main {
   border-bottom: solid 1px white;
 }
 
-.cards--container-desktop {
-  display: none;
-}
-
-.cards--container-mobile {
+.cards--container {
   width: auto;
   display: grid;
-  margin-top: 3rem;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   justify-content: center;
@@ -391,7 +365,6 @@ form > textarea:focus {
 
 .footer--section {
   width: 375px;
-  padding-top: 2rem;
   border-top: solid 1px white;
   display: flex;
   flex-direction: column;
@@ -402,16 +375,15 @@ form > textarea:focus {
   font-size: 2rem;
   text-decoration: none;
   color: #fff;
-  margin-top: 1.5rem;
+  margin-top: -2.5rem;
   margin-bottom: 2.5rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   header {
     position: fixed;
     top: 0;
     z-index: 99;
-    background-color: var(--background);
   }
 
   header a {
@@ -471,7 +443,6 @@ form > textarea:focus {
     background-image: url(./assets/img/TwoCircles.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 37% 14%;
   }
 
   .headline--title {
@@ -512,8 +483,8 @@ form > textarea:focus {
   }
 
   .skills--container {
-    width: 40vw;
-    height: 100%;
+    width: 35vw;
+    height: auto;
     padding: 1rem;
     display: flex;
     align-items: flex-start;
@@ -556,19 +527,6 @@ form > textarea:focus {
     margin: 0;
   }
 
-  .cards--container-mobile {
-    display: none;
-  }
-
-  .cards--container-desktop {
-    flex-direction: column;
-    width: 80vw;
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
-  }
-
   .recent--work--container {
     width: 100%;
     display: flex;
@@ -597,10 +555,17 @@ form > textarea:focus {
     border-bottom: solid 1px white;
   }
 
+  .cards--container {
+    width: 80vw;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+
   .recent--work--card {
     grid-column: 1/4;
     width: inherit;
-    max-width: 1100px;
     padding-top: 2.5rem;
     padding-bottom: 8rem;
     display: flex;
@@ -670,7 +635,7 @@ form > textarea:focus {
   }
 
   .form--container {
-    margin: 9rem 0;
+    margin: 20rem 0;
   }
 
   .form--container > p {
