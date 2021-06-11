@@ -59,10 +59,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./assets/svg/top\ circles.svg);
+  background-image: 
+  url(./assets/svg/Ellipse\ 18.svg),
+  url(./assets/svg/Ellipse\ 19.svg);
   background-repeat: no-repeat;
-  background-size: 117% 100%;
-  background-position: 42% -227px;
+  background-size: 22%, 32%;
+  background-position: 0% -1%, 100% 66%;
 }
 
 .headline--title {
@@ -405,6 +407,8 @@ form > textarea:focus {
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
+
+/* Desktop Breakpoint*/
 
 @media screen and (min-width: 992px) {
   header {
