@@ -381,6 +381,10 @@ form > textarea:focus {
   align-items: center;
 }
 
+.icons--footer{
+  margin: 2rem 0;
+}
+
 .footer--email {
   font-size: 2rem;
   text-decoration: none;
