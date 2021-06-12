@@ -58,6 +58,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image:
+    url(./assets/svg/Ellipse\ 18.svg),
+    url(./assets/svg/Ellipse\ 19.svg);
+  background-repeat: no-repeat;
+  background-size: 22%, 32%;
+  background-position: 0% -1%, 100% 66%;
+}
+
+.headline--title {
+  width: 80%;
 }
 
 .headline--container h1 {
@@ -371,6 +381,10 @@ form > textarea:focus {
   align-items: center;
 }
 
+.icons--footer {
+  margin: 2rem 0;
+}
+
 .footer--email {
   font-size: 2rem;
   text-decoration: none;
@@ -379,7 +393,9 @@ form > textarea:focus {
   margin-bottom: 2.5rem;
 }
 
-@media screen and (min-width: 768px) {
+/* Desktop Breakpoint */
+
+@media screen and (min-width: 992px) {
   header {
     position: fixed;
     top: 0;
