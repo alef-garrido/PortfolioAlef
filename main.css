@@ -42,6 +42,7 @@ header {
 /* Header / nav section */
 header a {
   margin-right: 15px;
+}  
 
 .desktop--menu {
   display: none;
