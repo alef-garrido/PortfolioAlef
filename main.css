@@ -42,7 +42,7 @@ header {
 /* Header / nav section */
 header a {
   margin-right: 15px;
-}  
+}
 
 .desktop--menu {
   display: none;
@@ -63,12 +63,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: 
-    url(./assets/svg/Ellipse\ 18.svg), 
+  background-image:
+    url(./assets/svg/Ellipse\ 18.svg),
     url(./assets/svg/Ellipse\ 19.svg);
   background-repeat: no-repeat;
   background-size: 24%, 20%;
-  background-position: 0% 3%, 100% 48%
+  background-position: 0% 3%, 100% 48%;
 }
 
 .headline--title {
@@ -223,7 +223,6 @@ main {
   align-items: center;
   width: 90%;
   height: 145px;
-  display: flex;
 }
 
 .section--tittle .title--mobile {
@@ -253,11 +252,11 @@ main {
 
 .cards--container {
   width: 100vw;
-  background-image: 
-  url(./assets/img/Ellipse19@2x.png),
-  url(./assets/img/Ellipse20@2x.png),
-  url(./assets/img/Ellipse21@2x.png),
-  url(./assets/img/Ellipse22@2x.png);
+  background-image:
+    url(./assets/img/Ellipse19@2x.png),
+    url(./assets/img/Ellipse20@2x.png),
+    url(./assets/img/Ellipse21@2x.png),
+    url(./assets/img/Ellipse22@2x.png);
   background-repeat: no-repeat;
   background-size: 70%, 37%, 70%, 47%;
   background-position: 0% 0%, 100% 33%, 0% 63%, 100% 91%;
@@ -325,12 +324,15 @@ main {
   background-color: #503458;
 }
 
+/* Contact Section */
+
 .form--container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
-  margin: 5em;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .form--container > p {
@@ -339,13 +341,6 @@ main {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   padding-bottom: 1em;
-}
-
-/* Contact Section */
-
-.form--container{
-  margin-top: 8rem;
-  margin-bottom: 8rem;
 }
 
 form {
@@ -453,7 +448,6 @@ form > textarea:focus {
     top: 0;
     z-index: 99;
     background-color: var(--background);
-
   }
 
   header a {
@@ -633,7 +627,7 @@ form > textarea:focus {
     border-bottom: solid 1px white;
   }
 
-  .cards--container .-desktop{
+  .cards--container .-desktop {
     width: 80vw;
     margin-top: 2rem;
     display: grid;
