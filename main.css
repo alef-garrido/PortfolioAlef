@@ -5,7 +5,7 @@
   --primary-1: #9490ff;
   --primary-2: #98baff;
   --primary-3: #4c47e6;
-  --btns: #7d73fc;
+  --btns: #663694;
   --ff: 'Roboto', sans-serif;
   --aff: 'Inter', serif;
 }
@@ -230,7 +230,7 @@ main {
   padding-bottom: 3rem;
   font-family: var(--ff);
   text-align: left;
-  font-size: 4rem;
+  font-size: 5rem;
   color: var(--primary-1);
   line-height: 5.2rem;
   font-weight: 500;
@@ -313,6 +313,7 @@ main {
 
 .card--btn {
   font-family: 'Inter', sans-serif;
+  font-weight: 500;
   width: 89px;
   height: 48px;
   background-color: var(--btns);
@@ -717,6 +718,7 @@ form > input[type]::placeholder,
 
   .card--btn {
     font-family: 'Inter', sans-serif;
+    font-style: bold;
     width: 89px;
     height: 48px;
     background-color: var(--btns);
