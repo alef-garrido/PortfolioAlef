@@ -554,7 +554,7 @@ form > textarea:focus {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    border-bottom: solid 1px var(--lines) ;
+    border-bottom: solid 1px var(--lines);
   }
 
   .skills--item {
@@ -630,7 +630,7 @@ form > textarea:focus {
     font-weight: 700;
     border-bottom: solid 1px var(--lines);
   }
-  
+
   .cards--container .-desktop {
     width: 100%;
     margin-top: 2rem;
@@ -652,7 +652,7 @@ form > textarea:focus {
     height: auto;
     width: 100%;
     flex: 2;
-  }  
+  }
 
   .card--thumbnail:nth-child(odd) {
     margin-right: 3rem;
@@ -745,7 +745,7 @@ form > textarea:focus {
     padding: 3rem 0;
   }
 
-  .social--icons--container {
+  .icons--footer > ul {
     min-width: 200px;
     display: flex;
     flex-direction: row;
@@ -760,6 +760,6 @@ form > textarea:focus {
   }
 
   .icons--footer {
-    margin:  0;
+    margin: 0;
   }
 }
