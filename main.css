@@ -5,6 +5,7 @@
   --primary-1: #9490ff;
   --primary-2: #98baff;
   --primary-3: #4c47e6;
+  --btns: #7d73fc;
   --ff: 'Roboto', sans-serif;
   --aff: 'Inter', serif;
 }
@@ -314,7 +315,7 @@ main {
   font-family: 'Inter', sans-serif;
   width: 89px;
   height: 48px;
-  background-color: var(--primary-2);
+  background-color: var(--btns);
   border: none;
   cursor: pointer;
 }
@@ -356,23 +357,22 @@ input {
   color: #303036;
 }
 
-form > label {
+label {
+  display: none;
+}
+
+.form--field {
   width: 100%;
+  height: 48px;
   box-sizing: border-box;
   border: none;
   margin-top: 2em;
 }
 
-form > label > input {
+.form--textarea {
   width: 100%;
-  height: 48px;
-  box-sizing: border-box;
-  border: none;
-}
-
-form > label > textarea {
-  width: 100%;
-  height: 152px;
+  height: 148px;
+  margin-top: 2rem;
   box-sizing: border-box;
   border: none;
   color: #303036;
@@ -383,7 +383,7 @@ form > button {
   height: 48px;
   border: none;
   margin-top: 3em;
-  background-color: var(--primary-2);
+  background-color: var(--btns);
   cursor: pointer;
 }
 
@@ -391,7 +391,7 @@ form > button:hover {
   background-color: #5e42d7;
 }
 
-form > label > input[type],
+form > input[type],
 #msg {
   background-color: aliceblue;
   padding-left: 20px;
@@ -406,12 +406,12 @@ form > input[type]::placeholder,
   padding-top: 20px;
 }
 
-form > input:focus {
+.form--field:focus {
   outline: 0;
   border: 4px solid rgb(250, 37, 232);
 }
 
-form > textarea:focus {
+.form--textarea:focus {
   outline: 0;
   border: 4px solid rgb(250, 37, 232);
 }
@@ -564,7 +564,7 @@ form > textarea:focus {
 
   .skills--item {
     width: 10rem;
-    margin-right: 4rem;
+    margin-right: 1rem;
     margin-bottom: 2rem;
   }
 
@@ -657,6 +657,16 @@ form > textarea:focus {
     height: auto;
     width: 100%;
     flex: 2;
+    transition: all 500ms linear;
+  }
+
+  .card--content h3 {
+    width: auto;
+    margin: 0;
+    padding-bottom: 2rem;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 4.4rem;
   }
 
   .card--thumbnail:nth-child(odd) {
@@ -709,14 +719,16 @@ form > textarea:focus {
     font-family: 'Inter', sans-serif;
     width: 89px;
     height: 48px;
-    background-color: var(--primary-2);
+    background-color: var(--btns);
     border: none;
     cursor: pointer;
     transition: all 500ms linear;
   }
 
   .card--btn:hover {
-    background-color: #503458;
+    background-color: var(--text);
+    color: var(--lines);
+    border: solid 1px rgb(250, 37, 232);
   }
 
   .form--container {
