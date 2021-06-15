@@ -119,11 +119,10 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: solid 1px var(--lines);
 }
 
 .skills--item {
-  width: 150px;
+  width: 125px;
   margin-bottom: 3rem;
 }
 
@@ -511,7 +510,7 @@ form > textarea:focus {
   }
 
   .headline--title {
-    width: 80%;
+    width: 60%;
     margin-top: 114px;
     display: flex;
     flex-direction: column;
@@ -549,18 +548,19 @@ form > textarea:focus {
   }
 
   .skills--container {
-    width: 43%;
+    width: 33%;
     height: auto;
     padding: 1rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    border-bottom: solid 1px var(--lines) ;
   }
 
   .skills--item {
-    width: 15rem;
-    margin-right: 3rem;
-    margin-bottom: 3rem;
+    width: 10rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
   }
 
   .supporting-item-container {
@@ -597,9 +597,13 @@ form > textarea:focus {
     display: none;
   }
 
-  .recent--work--container .-desktop {
-    display: inline;
+  .-desktop {
+    display: flex;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-size: 50%, 37%, 70%, 47%;
+    background-position: 0% -20%, 100% 33%, 0% 78%, 100% 107%;
   }
 
   .recent--work--container {
@@ -616,7 +620,7 @@ form > textarea:focus {
 
   .section--tittle .title--desktop {
     display: inline-block;
-    width: 80vw;
+    width: 100%;
     align-self: baseline;
     padding-bottom: 3rem;
     font-family: var(--ff);
@@ -624,11 +628,11 @@ form > textarea:focus {
     color: var(--primary-1);
     font-size: 6.4rem;
     font-weight: 700;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px var(--lines);
   }
-
+  
   .cards--container .-desktop {
-    width: 80vw;
+    width: 100%;
     margin-top: 2rem;
     display: grid;
     grid-template-columns: auto auto;
@@ -637,16 +641,18 @@ form > textarea:focus {
 
   .recent--work--card {
     grid-column: 1/4;
-    width: inherit;
-    margin: 0 1rem;
+    width: 80%;
+    max-width: 80%;
     padding-top: 2.5rem;
     padding-bottom: 8rem;
     display: flex;
   }
 
   .card--thumbnail {
-    flex: 3;
-  }
+    height: auto;
+    width: 100%;
+    flex: 2;
+  }  
 
   .card--thumbnail:nth-child(odd) {
     margin-right: 3rem;
@@ -668,6 +674,7 @@ form > textarea:focus {
   .card--content {
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
   }
 
   .card--content p {
@@ -731,15 +738,28 @@ form > textarea:focus {
 
   .footer--section {
     width: 100%;
-    border-top: solid 1px white;
+    border-top: solid 1px var(--lines);
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 3rem 0;
   }
 
+  .social--icons--container {
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+
   .footer--email {
     margin: 0;
     padding-left: 2rem;
+  }
+
+  .icons--footer {
+    margin:  0;
   }
 }
