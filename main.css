@@ -3,7 +3,7 @@
   --text: #e4e3fa;
   --lines: #646369;
   --primary-1: #9490ff;
-  --primary-2: #7d73fc;
+  --primary-2: #98baff;
   --primary-3: #4c47e6;
   --ff: 'Roboto', sans-serif;
   --aff: 'Inter', serif;
@@ -165,7 +165,7 @@ main {
 }
 
 .skills--container li h3 {
-  font-size: 12px;
+  font-size: 16px;
   padding-bottom: 0.25rem;
   color: var(--primary-2);
 }
@@ -353,21 +353,26 @@ form {
 input {
   list-style: none;
   padding: 0;
-  margin-top: 2em;
   color: #303036;
 }
 
-form > input {
+form > label {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 2em;
+}
+
+form > label > input {
   width: 100%;
   height: 48px;
   box-sizing: border-box;
   border: none;
 }
 
-form > textarea {
+form > label > textarea {
   width: 100%;
-  height: 148px;
-  margin-top: 2em;
+  height: 152px;
   box-sizing: border-box;
   border: none;
   color: #303036;
@@ -386,7 +391,7 @@ form > button:hover {
   background-color: #5e42d7;
 }
 
-form > input[type],
+form > label > input[type],
 #msg {
   background-color: aliceblue;
   padding-left: 20px;
