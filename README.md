@@ -18,7 +18,7 @@
 
 👤 Alef Garrido
 
-- GitHub: [@alef-garrido](https://github.com/alef-garrido)
-- Twitter: [@alefLemat](https://twitter.com/AlefLemat)
-- LinkedIn: [/alef-g](https://www.linkedin.com/in/alef-g/)
+- GitHub: [GitHub](https://github.com/alef-garrido)
+- Twitter: [Twitter](https://twitter.com/Alef_Garrido)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alef-g/)
 
