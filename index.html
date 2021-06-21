@@ -1,460 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CPVTXD6RW"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-0CPVTXD6RW');
-    </script>    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css" type="text/css"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      gtag("config", "G-0CPVTXD6RW");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <title>Alef's Portfolio</title>
-    </head>
-    <body>
-<!-- Header section -->
+  </head>
+  <body>
+    <!-- Header section -->
     <header>
-        <nav class="topnav"> 
-            <a href="#about" class="active" >
-                <img src="./assets/svg/Logo-Placeholder.svg" alt="site logo">
-            </a>
-            <div class="desktop--menu" id="links">
-                <a href="#work">Portfolio</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#mail-to"><img src="./assets/svg/email-white-24dp.svg" alt="email link"></a>
-            </div>
-            <a href="javascript:void(0);" class=" icon"  onclick="toggleFunction()">
-                <img src="./assets/svg/Icon-Menu.svg" alt="menu icon">
-            </a>
-        </nav>    
+      <nav class="topnav">
+        <a href="#about" class="active">
+          <img src="./assets/svg/Logo-Placeholder.svg" alt="site logo" />
+        </a>
+        <div class="desktop--menu" id="links" style="display: none;">
+           <a id="close-button" onclick="toggleFunction()">
+            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.293 5.293a1 1 0 011.414 0L12 10.586l5.293-5.293a1 1 0 111.414 1.414L13.414 12l5.293 5.293a1 1 0 01-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 01-1.414-1.414L10.586 12 5.293 6.707a1 1 0 010-1.414z" fill="#fff" /></svg>
+           </a>
+          <a href="#work">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#mail-to"><img src="./assets/svg/email-white-24dp.svg" alt="email link" /></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleFunction()">
+          <img src="./assets/svg/Icon-Menu.svg" alt="menu icon" />
+        </a>
+      </nav>
     </header>
     <main>
-<!-- Headline / About Me section-->        
-        <section id="about" class="headline--container">
-            <div class="headline--title">
-                <h1>Alef Garrido</h1>
-                <h2>Software Developer</h2>
-                <p class="description">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded,  don’t hestiate to contact me.</p>
-            </div>
-            
-<!-- My Skills section-->
+      <!-- Headline / About Me section-->
+      <section id="about" class="headline--container">
+        <div class="headline--title">
+          <h1>Alef Garrido</h1>
+          <h2>Software Developer</h2>
+          <p class="description">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        </div>
 
-            <section class="skills--container">
-                <ul class="skills--item bullet--icons">
-                    <li><h3>Language</h3></li>
-                    <li>Javascript</li>
-                    <li>Ruby</li>
-                    <li>Html</li>
-                    <li>Css</li>
-                </ul>
-                <ul class="skills--item bullet--icons">
-                    <li><h3>Frameworks</h3></li>
-                    <li>Bootstrap</li>
-                    <li>Ruby on Rails</li>
-                    <li>RSPec</li>
-                    <li>CapyBara</li>
-                    <li>Selenium</li>
-                </ul>
-                <ul class="skills--item bullet--icons">
-                    <li><h3>Skills</h3></li>
-                    <li>Codekit</li>
-                    <li>Github</li>
-                    <li>Codepen</li>
-                    <li>Gitlab</li>
-                    <li>Terminal</li>
-                </ul>         
-            </section>
-            <div class="supporting-item-container">    
-                <a class="supporting-item-l"  href="#">
-                    <img src="./assets/svg/Element-Let.svg" alt="section link">
-                </a>
-                <ul class="social--icons--container bullet--icons">
-                    <li>
-                        <a href="https://bit.ly/git-alef">
-                            <img src="./assets/svg/Icon-GitHub.svg" alt="Github Link">
-                        </a>
-                    </li>
-                    <li>
-                            <a href="https://bit.ly/link-alef">
-                                <img src="./assets/svg/Icon-Linkedin.svg" alt="LinkedIn Link">
-                            </a>
-                        </li>
-                    <li>
-                            <a href="https://bit.ly/twitter-alef">
-                                <img src="./assets/svg/Icon-Twitter.svg" alt="Twitter Link">
-                            </a>
-                        </li>
-                    <li>
-                            <a href="https://bit.ly/medium-alef">
-                                <img src="./assets/svg/Icon-Medium.svg" alt="Medium Link">
-                            </a> 
-                       </li>                    
-                </ul>
-                
-                <a class="supporting-item"  href="#">
-                    <img src="./assets/svg/Element-Right.svg" alt="section link">
-                </a>
-                </div>
+        <!-- My Skills section-->
+
+        <section class="skills--container">
+          <ul class="skills--item bullet--icons">
+            <li><h3>Language</h3></li>
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>Html</li>
+            <li>Css</li>
+          </ul>
+          <ul class="skills--item bullet--icons">
+            <li><h3>Frameworks</h3></li>
+            <li>Bootstrap</li>
+            <li>Ruby on Rails</li>
+            <li>RSPec</li>
+            <li>CapyBara</li>
+            <li>Selenium</li>
+          </ul>
+          <ul class="skills--item bullet--icons">
+            <li><h3>Skills</h3></li>
+            <li>Codekit</li>
+            <li>Github</li>
+            <li>Codepen</li>
+            <li>Gitlab</li>
+            <li>Terminal</li>
+          </ul>
+        </section>
+        <div class="supporting-item-container">
+          <a class="supporting-item-l" href="#">
+            <img src="./assets/svg/Element-Let.svg" alt="section link" />
+          </a>
+          <ul class="social--icons--container bullet--icons">
+            <li>
+              <a href="https://bit.ly/git-alef">
+                <img src="./assets/svg/Icon-GitHub.svg" alt="Github Link" />
+              </a>
+            </li>
+            <li>
+              <a href="https://bit.ly/link-alef">
+                <img src="./assets/svg/Icon-Linkedin.svg" alt="LinkedIn Link" />
+              </a>
+            </li>
+            <li>
+              <a href="https://bit.ly/twitter-alef">
+                <img src="./assets/svg/Icon-Twitter.svg" alt="Twitter Link" />
+              </a>
+            </li>
+            <li>
+              <a href="https://bit.ly/medium-alef">
+                <img src="./assets/svg/Icon-Medium.svg" alt="Medium Link" />
+              </a>
+            </li>
+          </ul>
+
+          <a class="supporting-item" href="#">
+            <img src="./assets/svg/Element-Right.svg" alt="section link" />
+          </a>
+        </div>
       </section>
-<!--Recent work section-->
-        <section id="work" class="recent--work--container">
-            <div class="section--tittle">
-                <h2 class="title--mobile">My recent <br> work</h2>
-                <h2 class="title--desktop">MY RECENT WORK</h2>
-            </div> 
-               
-            <ul class="cards--container -mobile">
+      <!--Recent work section-->
+      <section id="work" class="recent--work--container">
+        <div class="section--tittle">
+          <h2 class="title--mobile">
+            My recent <br />
+            work
+          </h2>
+          <h2 class="title--desktop">MY RECENT WORK</h2>
+        </div>
 
-                <li class="recent--work--card">
-                    <a href="#" class="card--thumbnail">
-                        <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot">
-                    </a>    
-                    <div class="card--content">
-                            <h3>Multi-Post Stories</h3>
-                            <p>
-                                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                            </p>
-                            <ul class="tech--container">
-                                <li>Css</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li>        
-                                <li>Html</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Bootstrap</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Ruby</li>
-                            </ul>
-                            <button type="button" class="card--btn">
-                                See Project
-                            </button>
-                    </div>   
+        <ul class="cards--container -mobile">
+          <li class="recent--work--card">
+            <a href="#" class="card--thumbnail">
+              <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot" />
+            </a>
+            <div class="card--content">
+              <h3>Multi-Post Stories</h3>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+              <ul class="tech--container">
+                <li>Css</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
                 </li>
-                <li class="recent--work--card">
-                    <a href="#" class="card--thumbnail">
-                        <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot">
-                    </a>    
-                    <div class="card--content">
-                            <h3>Multi-Post Stories</h3>
-                            <p>
-                                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                            </p>
-                            <ul class="tech--container">
-                                <li>Css</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li>        
-                                <li>Html</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Bootstrap</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Ruby</li>
-                            </ul>
-                            <button type="button" class="card--btn">
-                                See Project
-                            </button>
-                    </div>   
+                <li>Html</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
                 </li>
-                <li class="recent--work--card">
-                    <a href="#" class="card--thumbnail">
-                        <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot">
-                    </a>    
-                    <div class="card--content">
-                            <h3>Multi-Post Stories</h3>
-                            <p>
-                                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                            </p>
-                            <ul class="tech--container">
-                                <li>Css</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li>        
-                                <li>Html</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Bootstrap</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Ruby</li>
-                            </ul>
-                            <button type="button" class="card--btn">
-                                See Project
-                            </button>
-                    </div>   
+                <li>Bootstrap</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
                 </li>
-                <li class="recent--work--card">
-                    <a href="#" class="card--thumbnail">
-                        <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot">
-                    </a>    
-                    <div class="card--content">
-                            <h3>Multi-Post Stories</h3>
-                            <p>
-                                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                            </p>
-                            <ul class="tech--container">
-                                <li>Css</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li>        
-                                <li>Html</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Bootstrap</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Ruby</li>
-                            </ul>
-                            <button type="button" class="card--btn">
-                                See Project
-                            </button>
-                    </div>   
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="card--btn">See Project</button>
+            </div>
+          </li>
+          <li class="recent--work--card">
+            <a href="#" class="card--thumbnail">
+              <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot" />
+            </a>
+            <div class="card--content">
+              <h3>Multi-Post Stories</h3>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+              <ul class="tech--container">
+                <li>Css</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
                 </li>
-            </ul>
+                <li>Html</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Bootstrap</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="card--btn">See Project</button>
+            </div>
+          </li>
+          <li class="recent--work--card">
+            <a href="#" class="card--thumbnail">
+              <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot" />
+            </a>
+            <div class="card--content">
+              <h3>Multi-Post Stories</h3>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+              <ul class="tech--container">
+                <li>Css</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Html</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Bootstrap</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="card--btn">See Project</button>
+            </div>
+          </li>
+          <li class="recent--work--card">
+            <a href="#" class="card--thumbnail">
+              <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot" />
+            </a>
+            <div class="card--content">
+              <h3>Multi-Post Stories</h3>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+              <ul class="tech--container">
+                <li>Css</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Html</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Bootstrap</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="card--btn">See Project</button>
+            </div>
+          </li>
+        </ul>
 
-            <ul class="cards--container -desktop">
-
-                <li class="recent--work--card">
-                    <a href="#" class="card--thumbnail">
-                        <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot">
-                    </a>    
-                    <div class="card--content">
-                            <h3>Multi-Post Stories</h3>
-                            <p>
-                                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                            </p>
-                            <ul class="tech--container">
-                                <li>Css</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li>        
-                                <li>Html</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Bootstrap</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Ruby</li>
-                            </ul>
-                            <button type="button" class="card--btn">
-                                See Project
-                            </button>
-                    </div>   
+        <ul class="cards--container -desktop">
+          <li class="recent--work--card">
+            <a href="#" class="card--thumbnail">
+              <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot" />
+            </a>
+            <div class="card--content">
+              <h3>Multi-Post Stories</h3>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+              <ul class="tech--container">
+                <li>Css</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
                 </li>
-                <li class="recent--work--card">  
-                    <div class="card--content">
-                            <h3>Multi-Post Stories</h3>
-                            <p>
-                                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                            </p>
-                            <ul class="tech--container">
-                                <li>Css</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li>        
-                                <li>Html</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Bootstrap</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Ruby</li>
-                            </ul>
-                            <button type="button" class="card--btn">
-                                See Project
-                            </button>
-                        </div>  
-                        <a href="#" class="card--thumbnail">
-                            <picture >
-                              <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot">
-                            </picture>
-                        </a>       
+                <li>Html</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
                 </li>
-                <li class="recent--work--card">
-                    <a href="#" class="card--thumbnail">
-                        <picture >
-                          <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot">
-                        </picture>
-                    </a>    
-                    <div class="card--content">
-                            <h3>Multi-Post Stories</h3>
-                            <p>
-                                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                            </p>
-                            <ul class="tech--container">
-                                <li>Css</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li>        
-                                <li>Html</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Bootstrap</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Ruby</li>
-                            </ul>
-                            <button type="button" class="card--btn">
-                                See Project
-                            </button>
-                        </div>   
+                <li>Bootstrap</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
                 </li>
-                <li class="recent--work--card">  
-                    <div class="card--content">
-                            <h3>Multi-Post Stories</h3>
-                            <p>
-                                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                            </p>
-                            <ul class="tech--container">
-                                <li>Css</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li>        
-                                <li>Html</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Bootstrap</li>
-                                <li>
-                                    <span>
-                                        <img src="./assets/svg/Rectangle70.svg" alt="decoration">
-                                    </span>
-                                </li> 
-                                <li>Ruby</li>
-                            </ul>
-                            <button type="button" class="card--btn">
-                                See Project
-                            </button>
-                        </div>  
-                        <a href="#" class="card--thumbnail">
-                            <picture >
-                              <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot">
-                            </picture>
-                        </a>       
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="card--btn">See Project</button>
+            </div>
+          </li>
+          <li class="recent--work--card">
+            <div class="card--content">
+              <h3>Multi-Post Stories</h3>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+              <ul class="tech--container">
+                <li>Css</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
                 </li>
-            </ul>
-
-        </section>
-<!-- Contact Section-->
-        <section id="contact" class="form--container">
-            <h3>Let's Chat!</h3>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-            <form action="https://bit.ly/3cskIom" method="post">
-                <label for="name">User Name</label>
-                    <input class="form--field" type="text" id="name" name="user-name" placeholder="Name" maxlength="30" required>
-                <label for="mail">User Email</label>
-                    <input class="form--field" type="email" id="mail" name="user-email" placeholder="youremail@example.com" required>
-                <label for="msg">User message</label>
-                <textarea  class="form--textarea" id="msg" name="user-message" placeholder="Say hi!"  maxlength="500" required></textarea>
-                <button class="button" type="submit">
-                    Send
-                </button>        
-            </form>
-        </section>
+                <li>Html</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Bootstrap</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="card--btn">See Project</button>
+            </div>
+            <a href="#" class="card--thumbnail">
+              <picture>
+                <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot" />
+              </picture>
+            </a>
+          </li>
+          <li class="recent--work--card">
+            <a href="#" class="card--thumbnail">
+              <picture>
+                <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot" />
+              </picture>
+            </a>
+            <div class="card--content">
+              <h3>Multi-Post Stories</h3>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+              <ul class="tech--container">
+                <li>Css</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Html</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Bootstrap</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="card--btn">See Project</button>
+            </div>
+          </li>
+          <li class="recent--work--card">
+            <div class="card--content">
+              <h3>Multi-Post Stories</h3>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+              <ul class="tech--container">
+                <li>Css</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Html</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Bootstrap</li>
+                <li>
+                  <span>
+                    <img src="./assets/svg/Rectangle70.svg" alt="decoration" />
+                  </span>
+                </li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="card--btn">See Project</button>
+            </div>
+            <a href="#" class="card--thumbnail">
+              <picture>
+                <img src="./assets/img/Snapshoot-Portfolio.png" alt="project screenshot" />
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- Contact Section-->
+      <section id="contact" class="form--container">
+        <h3>Let's Chat!</h3>
+        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
+        <form action="https://bit.ly/3cskIom" method="post">
+          <label for="name">User Name</label>
+          <input class="form--field" type="text" id="name" name="user-name" placeholder="Name" maxlength="30" required />
+          <label for="mail">User Email</label>
+          <input class="form--field" type="email" id="mail" name="user-email" placeholder="youremail@example.com" required />
+          <label for="msg">User message</label>
+          <textarea class="form--textarea" id="msg" name="user-message" placeholder="Say hi!" maxlength="500" required></textarea>
+          <button class="button" type="submit">Send</button>
+        </form>
+      </section>
     </main>
- <!--Footer section-->   
+    <!--Footer section-->
     <footer id="mail-to" class="footer--section">
-        <div class="icons--footer">    
-            <ul class="social--icons--container bullet--icons">
-                <li>
-                            <a href="https://bit.ly/git-alef">
-                                <img src="./assets/svg/Icon-GitHub.svg" alt="Github Link">
-                            </a>
-                    </li>
-                <li>
-                                <a href="https://bit.ly/link-alef">
-                                    <img src="./assets/svg/Icon-Linkedin.svg" alt="LinkedIn Link">
-                                </a>
-                    </li>
-                 <li>
-                                <a href="https://bit.ly/twitter-alef">
-                                    <img src="./assets/svg/Icon-Twitter.svg" alt="Twitter Link">
-                                </a>
-                     </li>
-                <li>
-                                <a href="https://bit.ly/medium-alef">
-                                    <img src="./assets/svg/Icon-Medium.svg" alt="Medium Link">
-                                </a> 
-                     </li>                  
-            </ul>
-        </div>  
-        <a href="mailto:oa.garrido11@gmail.com" class="footer--email">oa.garrido11@gmail.com</a>  
+      <div class="icons--footer">
+        <ul class="social--icons--container bullet--icons">
+          <li>
+            <a href="https://bit.ly/git-alef">
+              <img src="./assets/svg/Icon-GitHub.svg" alt="Github Link" />
+            </a>
+          </li>
+          <li>
+            <a href="https://bit.ly/link-alef">
+              <img src="./assets/svg/Icon-Linkedin.svg" alt="LinkedIn Link" />
+            </a>
+          </li>
+          <li>
+            <a href="https://bit.ly/twitter-alef">
+              <img src="./assets/svg/Icon-Twitter.svg" alt="Twitter Link" />
+            </a>
+          </li>
+          <li>
+            <a href="https://bit.ly/medium-alef">
+              <img src="./assets/svg/Icon-Medium.svg" alt="Medium Link" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="mailto:oa.garrido11@gmail.com" class="footer--email">oa.garrido11@gmail.com</a>
     </footer>
-    <script src="./myfuntions.js">
-    </script>
-    </body>
+    <script src="./myfuntions.js"></script>
+  </body>
 </html>
-
-
