@@ -31,9 +31,9 @@ body {
 
 header {
   width: 100%;
-  height: 92px;
+  height: fit-content;
   display: flex;
-  align-items: center;
+    /* align-items: center; */
   justify-content: space-around;
   margin: 1rem 0;
   padding-bottom: 1rem;
@@ -45,8 +45,55 @@ header a {
   margin-right: 15px;
 }
 
-.desktop--menu {
+/* Style the navigation menu */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  background-color: var(--background);
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #links {
   display: none;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: var(--background);
+  width: 100%;
+  height: 100%;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  height: 56px;
+  color: white;
+  padding: 14px 0 0 14px;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: var(--background);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
 /* Headline section */
