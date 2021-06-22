@@ -7,3 +7,6 @@ function toggleFunction() {
       t.style.display = "flex";
     }
 }
+
+document.getElementById('close-button').addEventListener('click', toggle);
+document.getElementById('menu').addEventListener('click', toggle);
