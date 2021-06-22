@@ -7,9 +7,9 @@ function toggleFunction() {
   }
 }
 
-let e = "toggle"
+const e = 'toggle';
 
 document.getElementById('close-button').addEventListener('click', e);
 document.getElementById('menu').addEventListener('click', e);
 
-toggleFunction()
+toggleFunction();
