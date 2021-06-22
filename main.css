@@ -37,7 +37,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding-top: rem;
   padding-bottom: 1rem;
 }
 
@@ -67,7 +66,7 @@ header a {
   flex-direction: column;
   position: fixed;
   background-color: var(--background);
-  background-image: 
+  background-image:
     url(./assets/svg/shape-mobile-menu-1.svg),
     url(./assets/svg/shape-mobile-menu-2.svg);
   background-repeat: no-repeat;
@@ -139,8 +138,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: 
-    url(./assets/svg/Ellipse\ 18.svg), 
+  background-image:
+    url(./assets/svg/Ellipse\ 18.svg),
     url(./assets/svg/Ellipse\ 19.svg);
   background-repeat: no-repeat;
   background-size: 24%, 20%;
@@ -202,7 +201,7 @@ main {
   margin-bottom: 3rem;
 }
 
-.skills--item>li {
+.skills--item > li {
   margin-bottom: 1rem;
 }
 
@@ -210,7 +209,7 @@ main {
   list-style: none;
 }
 
-.card--content>h3 {
+.card--content > h3 {
   width: auto;
   margin: 20px 0;
   padding-bottom: 2rem;
@@ -220,7 +219,7 @@ main {
   line-height: 4.4rem;
 }
 
-.form--container>h3 {
+.form--container > h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -327,9 +326,10 @@ main {
 
 .cards--container {
   width: 100vw;
-  background-image: url(./assets/img/Ellipse19@2x.png), 
-    url(./assets/img/Ellipse20@2x.png), 
-    url(./assets/img/Ellipse21@2x.png), 
+  background-image:
+    url(./assets/img/Ellipse19@2x.png),
+    url(./assets/img/Ellipse20@2x.png),
+    url(./assets/img/Ellipse21@2x.png),
     url(./assets/img/Ellipse22@2x.png);
   background-repeat: no-repeat;
   background-size: 70%, 37%, 70%, 47%;
@@ -410,7 +410,7 @@ main {
   margin-bottom: 8rem;
 }
 
-.form--container>p {
+.form--container > p {
   width: 80%;
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -453,7 +453,7 @@ label {
   color: #303036;
 }
 
-form>button {
+form > button {
   width: 89px;
   height: 48px;
   border: none;
@@ -462,16 +462,18 @@ form>button {
   cursor: pointer;
 }
 
-form>button:hover {
+form > button:hover {
   background-color: #5e42d7;
 }
 
-form>input[type], #msg {
+form > input[type],
+#msg {
   background-color: aliceblue;
   padding-left: 20px;
 }
 
-form>input[type]::placeholder, #msg::placeholder {
+form > input[type]::placeholder,
+#msg::placeholder {
   color: #3d3c46;
 }
 
@@ -527,50 +529,60 @@ form>input[type]::placeholder, #msg::placeholder {
     z-index: 50;
     background-color: var(--background);
   }
+
   header a {
     transition-property: border-bottom, padding-bottom;
     transition-duration: 100ms, 100ms;
     transition-timing-function: linear, linear;
   }
-  header>a {
+
+  header > a {
     padding-left: 15rem;
+    animation: rotate-logo 1s linear;
   }
+
   .topnav {
     justify-content: space-around;
   }
-  #desktop--nav--menu>a {
+
+  #desktop--nav--menu > a {
     margin: 0 1rem;
     font-size: 1.5rem;
     text-decoration: none;
   }
-  #desktop--nav--menu>a:hover {
+
+  #desktop--nav--menu > a:hover {
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
   }
-  header a  {
-    animation: rotate-logo 1s linear;
-  }
+
   @keyframes rotate-logo {
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
   }
+
   .header--menu--icon {
     display: none;
   }
+
   #menu {
     display: none;
   }
+
   #desktop--nav--menu {
     display: flex;
     align-items: center;
   }
+
   main {
     width: 100%;
   }
+
   .headline--container {
     margin-top: 11.4rem;
     width: 100%;
@@ -581,6 +593,7 @@ form>input[type]::placeholder, #msg::placeholder {
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   .headline--title {
     width: 60%;
     margin-top: 114px;
@@ -588,6 +601,7 @@ form>input[type]::placeholder, #msg::placeholder {
     flex-direction: column;
     align-items: center;
   }
+
   .headline--container h1 {
     width: auto;
     left: 0;
@@ -598,12 +612,14 @@ form>input[type]::placeholder, #msg::placeholder {
     font-weight: bold;
     font-size: 9rem;
   }
+
   .headline--container h2 {
     font-size: 4rem;
     width: auto;
     padding-top: 3rem;
     padding-bottom: 6rem;
   }
+
   .headline--container .description {
     width: 55%;
     text-align: center;
@@ -615,6 +631,7 @@ form>input[type]::placeholder, #msg::placeholder {
     margin-top: 4rem;
     padding-bottom: 7rem;
   }
+
   .skills--container {
     width: 35%;
     height: auto;
@@ -624,11 +641,13 @@ form>input[type]::placeholder, #msg::placeholder {
     justify-content: center;
     border-bottom: solid 1px var(--lines);
   }
+
   .skills--item {
     width: 10rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
   }
+
   .supporting-item-container {
     width: 80vw;
     margin-top: 12rem;
@@ -637,6 +656,7 @@ form>input[type]::placeholder, #msg::placeholder {
     align-items: center;
     justify-content: space-between;
   }
+
   .social--icons--container {
     min-width: 200px;
     display: flex;
@@ -644,9 +664,11 @@ form>input[type]::placeholder, #msg::placeholder {
     align-items: center;
     justify-content: space-between;
   }
+
   .supporting-item-l {
     display: inline;
   }
+
   .supporting-item {
     display: inline;
     width: 77px;
@@ -655,9 +677,11 @@ form>input[type]::placeholder, #msg::placeholder {
     top: 64px;
     margin: 0;
   }
+
   .-mobile {
     display: none;
   }
+
   .-desktop {
     display: flex;
     width: 100%;
@@ -666,6 +690,7 @@ form>input[type]::placeholder, #msg::placeholder {
     background-size: 50%, 37%, 70%, 47%;
     background-position: 0% -20%, 100% 33%, 0% 78%, 100% 107%;
   }
+
   .recent--work--container {
     width: 100%;
     display: flex;
@@ -673,9 +698,11 @@ form>input[type]::placeholder, #msg::placeholder {
     align-items: center;
     margin-top: 20rem;
   }
+
   .title--mobile {
     display: none;
   }
+
   .section--tittle .title--desktop {
     display: inline-block;
     width: 100%;
@@ -688,6 +715,7 @@ form>input[type]::placeholder, #msg::placeholder {
     font-weight: 700;
     border-bottom: solid 1px var(--lines);
   }
+
   .cards--container .-desktop {
     width: 100%;
     margin-top: 2rem;
@@ -695,6 +723,7 @@ form>input[type]::placeholder, #msg::placeholder {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
   }
+
   .recent--work--card {
     grid-column: 1/4;
     width: 80%;
@@ -703,12 +732,14 @@ form>input[type]::placeholder, #msg::placeholder {
     padding-bottom: 8rem;
     display: flex;
   }
+
   .card--thumbnail {
     height: auto;
     width: 100%;
     flex: 2;
     transition: all 500ms linear;
   }
+
   .card--content h3 {
     width: auto;
     margin: 0;
@@ -717,24 +748,30 @@ form>input[type]::placeholder, #msg::placeholder {
     font-weight: 500;
     line-height: 4.4rem;
   }
+
   .card--thumbnail:nth-child(odd) {
     margin-right: 3rem;
   }
+
   .card--thumbnail:nth-child(even) {
     margin-left: 3rem;
   }
+
   .card--thumbnail img {
     width: 100%;
     height: auto;
   }
+
   .card--thumbnail:hover {
     transform: scale(0.7);
   }
+
   .card--content {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
   }
+
   .card--content p {
     width: 327px;
     height: 204px;
@@ -743,10 +780,12 @@ form>input[type]::placeholder, #msg::placeholder {
     line-height: 28px;
     color: var(--text);
   }
+
   .card--content ul {
     list-style: none;
     font-family: 'Inter', sans-serif;
   }
+
   .tech--container {
     width: 345px;
     margin-top: 2rem;
@@ -755,6 +794,7 @@ form>input[type]::placeholder, #msg::placeholder {
     justify-content: space-between;
     align-items: center;
   }
+
   .card--btn {
     font-family: 'Inter', sans-serif;
     width: 89px;
@@ -764,28 +804,35 @@ form>input[type]::placeholder, #msg::placeholder {
     cursor: pointer;
     transition: all 500ms linear;
   }
+
   .card--btn:hover {
     background-color: var(--text);
     color: var(--lines);
     border: solid 1px rgb(250, 37, 232);
   }
+
   .form--container {
     margin: 20rem 0;
   }
-  .form--container>p {
+
+  .form--container > p {
     margin: 0 10%;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     padding-bottom: 1em;
   }
-  form>button {
+
+  form > button {
     transition: all 500ms linear;
   }
-  input:hover, textarea:hover {
+
+  input:hover,
+  textarea:hover {
     transform: translate(10px);
     border: solid 3px var(--primary-1);
   }
+
   .footer--section {
     width: 100%;
     border-top: solid 1px var(--lines);
@@ -794,7 +841,8 @@ form>input[type]::placeholder, #msg::placeholder {
     justify-content: center;
     padding: 3rem 0;
   }
-  .icons--footer>ul {
+
+  .icons--footer > ul {
     min-width: 200px;
     display: flex;
     flex-direction: row;
@@ -802,10 +850,12 @@ form>input[type]::placeholder, #msg::placeholder {
     justify-content: space-between;
     margin: 0;
   }
+
   .footer--email {
     margin: 0;
     padding-left: 2rem;
   }
+
   .icons--footer {
     margin: 0;
   }
