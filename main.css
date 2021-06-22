@@ -33,11 +33,10 @@ header {
   width: 100%;
   height: fit-content;
   display: flex;
-  /* align-items: center; */
   justify-content: space-around;
   margin: 1rem 0;
   padding-bottom: 1rem;
-  color: transparent;
+  background-color: transparent;
 }
 
 /* Header / nav section */
@@ -63,6 +62,11 @@ header a {
   flex-direction: column;
   position: fixed;
   background-color: var(--background);
+  background-image: 
+    url(./assets/svg/shape-mobile-menu-1.svg),
+    url(./assets/svg/shape-mobile-menu-2.svg);
+  background-repeat: no-repeat;
+  background-position: 111% 140%, 1% -6%;
   width: 100%;
   height: 100%;
   z-index: 50;
@@ -75,13 +79,18 @@ header a {
 
 /* Style navigation menu links */
 
-.topnav a {
+#links a {
   height: 56px;
-  color: white;
-  padding: 14px 0 0 14px;
+  color: var(--text);
+  padding: 14px 0 0 40px;
   text-decoration: none;
   font-size: 24px;
   display: block;
+}
+
+#links .arrow {
+  margin-left: 25%;
+  float: right;
 }
 
 /* Style the hamburger menu */
@@ -90,7 +99,7 @@ header a {
   background: var(--background);
   display: block;
   position: absolute;
-  right: 0;
+  right: 24px;
   top: 0;
 }
 
@@ -101,11 +110,17 @@ header a {
   color: black;
 }
 
-/* Style the active link (or home/logo) */
+/* Style the home/logo */
 
-.active {
-  background-color: #04AA6D;
+.site--logo {
+  margin: 12px 0 0 20px;
+  font-family: var(--ff);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: transparent;
   color: white;
+  text-decoration: none;
 }
 
 /* Headline section */
@@ -123,10 +138,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./assets/svg/Ellipse\ 18.svg), url(./assets/svg/Ellipse\ 19.svg);
+  background-image: 
+    url(./assets/svg/Ellipse\ 18.svg), 
+    url(./assets/svg/Ellipse\ 19.svg);
   background-repeat: no-repeat;
   background-size: 24%, 20%;
-  background-position: 0% 3%, 100% 48%;
+  background-position: 0% 8%, 100% 48%;
 }
 
 .headline--title {
