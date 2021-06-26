@@ -21,8 +21,8 @@ const winElements = [
       cardImg: './assets/img/Snapshoot-Portfolio.png',
       cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
       tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
-      btn_1:'.',
-      btn_2:'.'
+      btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
+      btn_2:'https://github.com/alef-garrido/PortfolioAlef'
     },
     {
       id: 2,
@@ -30,8 +30,8 @@ const winElements = [
       cardImg: './assets/img/Snapshoot-Portfolio.png',
       cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
       tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
-      btn_1:'.',
-      btn_2:'.'
+      btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
+      btn_2:'https://github.com/alef-garrido/PortfolioAlef'
     },
     {
       id: 3,
@@ -39,8 +39,8 @@ const winElements = [
       cardImg: './assets/img/Snapshoot-Portfolio.png',
       cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
       tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
-      btn_1:'.',
-      btn_2:'.'
+      btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
+      btn_2:'https://github.com/alef-garrido/PortfolioAlef'
     },
     {
       id: 4,
@@ -48,16 +48,18 @@ const winElements = [
       cardImg: './assets/img/Snapshoot-Portfolio.png',
       cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
       tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
-      btn_1:'.',
-      btn_2:'.'
+      btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
+      btn_2:'https://github.com/alef-garrido/PortfolioAlef'
     },
 ];
 
-
+//Mobile 
 const generateSection = function() {
   //grab HTML container
-  const container = document.querySelector('#projects-display');
+  const container = document.querySelector('#projects-display-m');
+  const container_md = document.querySelector('#projects-display-d');
 
+  //Populate Project Section
   for(let i = 0; i < winElements.length; i++) {
       const listItem = document.createElement('li');
 
@@ -97,14 +99,22 @@ const generateSection = function() {
       cardBtn.classList.add('card--btn');
       cardBtn.textContent = 'See Project';
 
-
-      
+      //Mobile display
       thumbnailContainer.appendChild(thumbnail);
       contentContainer.append(cardTitle, cardSummary, techContainer, cardBtn);
       listItem.append(thumbnailContainer, contentContainer);
       container.append(listItem)
+      //desktop 
+
   }
 }
 
 generateSection();
+
+//PopUp Window
+const popUp = document.querySelector('#popWinParent');
+
+const popUpShow = function() {
+  
+}
 
