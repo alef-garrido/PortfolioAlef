@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CPVTXD6RW"></script>
     <script>
@@ -13,8 +15,6 @@
 
       gtag("config", "G-0CPVTXD6RW");
     </script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
@@ -145,11 +145,10 @@
       </section>
       <!--Project Display PopUp-->
       <div id="popCard" class="pop-window card-hidden">
-        <div class="pop-card">
-          <a id="closeCard" class="pop-up--close-btn" onclick="popUpShow()">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.293 5.293a1 1 0 011.414 0L12 10.586l5.293-5.293a1 1 0 111.414 1.414L13.414 12l5.293 5.293a1 1 0 01-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 01-1.414-1.414L10.586 12 5.293 6.707a1 1 0 010-1.414z" fill="#fff" /></svg>
-          </a>
-          <div class="popUpCard--content">
+        <div class="pop-card popUpCard--content">
+          <a  id="closeCard" class="pop-up--close-btn">
+            <svg  width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.293 5.293a1 1 0 011.414 0L12 10.586l5.293-5.293a1 1 0 111.414 1.414L13.414 12l5.293 5.293a1 1 0 01-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 01-1.414-1.414L10.586 12 5.293 6.707a1 1 0 010-1.414z" fill="#fff" /></svg>
+          </a>        
             <h3 id="windowTitle"></h3>
             <img id="windowImage" src="" alt="">
             <p id='windowSummary'></p>
@@ -181,7 +180,6 @@
             <button type="button" id="btn1" class="win--btn">
               <span><img src="./assets/svg/Icon-GitHub.svg" alt="export icon"></span>
             </button>
-          </div>
         </div>
       </div>
       <!-- Contact Section-->

@@ -402,6 +402,7 @@ main {
 .pop-window {
   background-color: var(--background);
   position: fixed;
+  padding: 2rem;
   top: 0;
   width: 100%;
   height: 100%;
@@ -474,6 +475,9 @@ main {
 
 .pop-up--close-btn {
   align-self: flex-end;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 /* Contact Section */
 

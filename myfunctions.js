@@ -111,9 +111,7 @@ const generateSection = function() {
 
 generateSection();
 
-//PopUp Window container
-
-
+//Popullate Window contaiener
  for (let i = 0; i < winElements.length; i++) {
   const winTitle = document.getElementById('windowTitle');
   const winImg = document.getElementById('windowImage');
@@ -144,17 +142,23 @@ generateSection();
 };
 
 //PopUp Window display
-
-let alertB = () => {
-  return alert('hello')
-};
+const displayPopUp = () => {
+    const window = document.querySelector('.card-hidden');
+    if (window.style.display === 'flex') {
+      window.style.display = 'none';
+    } else {
+      window.style.display = 'flex';
+    };
+}
 
 const display = function(e) {
   const winBtns = document.querySelectorAll('.card--btn');
-  const arrBtns = Array.from(winBtns)
-  arrBtns.forEach((b) => {
-    b.addEventListener('click', alertB)
-  })
+  const arrBtns = Array.from(winBtns);
+  arrBtns.forEach((b) => b.addEventListener('click', e));
+  document.querySelector('#closeCard').addEventListener('click', e);
   }
+ display(displayPopUp);
 
- display(alertB)
+
+
+ 
