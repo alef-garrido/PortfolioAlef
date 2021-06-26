@@ -111,10 +111,59 @@ const generateSection = function() {
 
 generateSection();
 
-//PopUp Window
-const popUp = document.querySelector('#popWinParent');
+//PopUp Window container
 
-const popUpShow = function() {
-  
+
+ for (let i = 0; i < winElements.length; i++) {
+  const winTitle = document.getElementById('windowTitle');
+  const winImg = document.getElementById('windowImage');
+  const winSummary = document.getElementById('windowSummary');
+
+  switch (winElements[i].id) {
+    case 1:
+      winTitle.textContent = winElements[i].cardTitle;
+      winImg.src = winElements[i].cardImg;
+      winSummary.textContent = winElements[i].cardSummary;
+      break;
+    case 2:
+      winTitle.textContent = winElements[i].cardTitle;
+      winImg.src = winElements[i].cardImg;
+      winSummary.textContent = winElements[i].cardSummary;
+      break;
+    case 3:
+      winTitle.textContent = winElements[i].cardTitle;
+      winImg.src = winElements[i].cardImg;
+      winSummary.textContent = winElements[i].cardSummary;
+      break;
+    case 4:
+      winTitle.textContent = winElements[i].cardTitle;
+      winImg.src = winElements[i].cardImg;
+      winSummary.textContent = winElements[i].cardSummary;
+      break;
+  }
+};
+
+//PopUp Window display
+
+
+
+const displayPopUp = function() {
+  const winContainer = document.querySelector('.card--hidden');
+  // const winCard = document.querySelector('pop-card');
+  if (winContainer.style.display === 'flex') {
+    winContainer.style.display = 'none';
+  } else {
+    winContainer.style.display = 'flex';
+  }
 }
 
+const winBtns = document.getElementsByClassName('card--btn');
+console.log(winBtns)
+winBtns.forEach((b) => {
+  b.addEventListener('click', displayPopUp());
+});
+const closeWin = document.getElementById('closeCard')
+closeWin.addEventListener('click', () => {
+  closeWin.style.display = 'none';
+  closeWin.style.display = 'none';
+});
