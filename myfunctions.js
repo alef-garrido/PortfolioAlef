@@ -145,25 +145,16 @@ generateSection();
 
 //PopUp Window display
 
+let alertB = () => {
+  return alert('hello')
+};
 
-
-const displayPopUp = function() {
-  const winContainer = document.querySelector('.card--hidden');
-  // const winCard = document.querySelector('pop-card');
-  if (winContainer.style.display === 'flex') {
-    winContainer.style.display = 'none';
-  } else {
-    winContainer.style.display = 'flex';
+const display = function(e) {
+  const winBtns = document.querySelectorAll('.card--btn');
+  const arrBtns = Array.from(winBtns)
+  arrBtns.forEach((b) => {
+    b.addEventListener('click', alertB)
+  })
   }
-}
 
-const winBtns = document.getElementsByClassName('card--btn');
-console.log(winBtns)
-winBtns.forEach((b) => {
-  b.addEventListener('click', displayPopUp());
-});
-const closeWin = document.getElementById('closeCard')
-closeWin.addEventListener('click', () => {
-  closeWin.style.display = 'none';
-  closeWin.style.display = 'none';
-});
+ display(alertB)
