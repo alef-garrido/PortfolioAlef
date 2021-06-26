@@ -460,13 +460,15 @@ main {
   align-items: center;
 }
 
-.pop-up-card--content .card--btn {
+.win--btn {
+  background-color: var(--btns);
   width: fit-content;
   padding: 1rem;
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .pop-up-card--content .card--btn svg img {
