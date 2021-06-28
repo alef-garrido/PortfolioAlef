@@ -20,24 +20,49 @@
     <title>Alef's Portfolio</title>
     </head>
     <body>
+
 <!-- Header section -->
     <header>
-        <a href="#">
-            <img src="./assets/svg/Logo-Placeholder.svg" alt="site logo">
+      <nav class="topnav">
+        <a href="#about" class="site--logo">Alef Garrido</a>
+        <div id="links" style="display: none;">
+           <a id="close-button" onclick="toggleFunction()">
+            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.293 5.293a1 1 0 011.414 0L12 10.586l5.293-5.293a1 1 0 111.414 1.414L13.414 12l5.293 5.293a1 1 0 01-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 01-1.414-1.414L10.586 12 5.293 6.707a1 1 0 010-1.414z" fill="#fff" /></svg>
+           </a>
+          <a href="#work"  onclick="toggleFunction()">
+              Portfolio 
+              <img class="arrow" src="./assets/svg/Icon-Chevron-Right-Larger.svg" alt="decoration">
+            </a>
+          <a href="#about"  onclick="toggleFunction()">
+              About
+              <img class="arrow" src="./assets/svg/Icon-Chevron-Right-Larger.svg" alt="decoration">
+            </a>
+          <a href="#contact"  onclick="toggleFunction()">
+              Contact
+              <img class="arrow" src="./assets/svg/Icon-Chevron-Right-Larger.svg" alt="decoration">
+            </a>
+        </div>
+        <a href="javascript:void(0);" id="menu" class="icon" onclick="toggleFunction()">
+          <img src="./assets/svg/Icon-Menu.svg" alt="menu icon" />
         </a>
-        <nav class="topnav"> 
-            <p href="javascript:void(0);" class="header--menu--icon icon" onclick="toggleFunction()">
-                <img src="./assets/svg/Icon-Menu.svg" alt="menu icon">
-            </p>
-            <div class="desktop--menu" id="links">
-                <a href="#work">Portfolio</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#mail-to"><img src="./assets/svg/email-white-24dp.svg" alt="email link"></a>
-            </div>
-        </nav>    
+        <div id="desktop--nav--menu">
+            <a href="#work">
+                Portfolio 
+              </a>
+            <a href="#about">
+                About
+              </a>
+            <a href="#contact">
+                Contact
+              </a>
+            <a href="#mail-to">
+                <img src="./assets/svg/email-white-24dp.svg" alt="email link" />
+            </a>
+        </div>
+      </nav>
     </header>
     <main>
+
 <!-- Headline / About Me section-->        
         <section id="about" class="headline--container">
             <div class="headline--title">
@@ -105,6 +130,7 @@
                 </a>
                 </div>
       </section>
+
 <!--Recent work section-->
         <section id="work" class="recent--work--container">
             <div class="section--tittle">
@@ -405,8 +431,8 @@
                         </a>       
                 </li>
             </ul>
-
         </section>
+        
 <!-- Contact Section-->
         <section id="contact" class="form--container">
             <h3>Let's Chat!</h3>
