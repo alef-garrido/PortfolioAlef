@@ -17,6 +17,10 @@
   font-size: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -31,22 +35,92 @@ body {
 
 header {
   width: 100%;
-  height: 92px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  margin: 1rem 0;
   padding-bottom: 1rem;
-  color: transparent;
 }
 
 /* Header / nav section */
+
 header a {
   margin-right: 15px;
 }
 
-.desktop--menu {
+/* Style the navigation menu */
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+
+#desktop--nav--menu {
   display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #links {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: var(--background);
+  background-image:
+    url(./assets/svg/shape-mobile-menu-1.svg),
+    url(./assets/svg/shape-mobile-menu-2.svg);
+  background-repeat: no-repeat;
+  background-position: 111% 140%, 1% -6%;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+#close-button {
+  align-self: flex-end;
+  padding-right: 28px;
+  cursor: pointer;
+}
+
+/* Style navigation menu links */
+
+#links a {
+  height: 56px;
+  color: var(--text);
+  padding: 14px 0 0 40px;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+}
+
+#links .arrow {
+  margin-left: 25%;
+  float: right;
+}
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+  background: var(--background);
+  display: block;
+  position: absolute;
+  right: 24px;
+  top: 0;
+  padding-top: 1.5rem;
+}
+
+/* Style the home/logo */
+
+.site--logo {
+  margin: 12px 0 0 20px;
+  font-family: var(--ff);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding-top: 1.5rem;
 }
 
 /* Headline section */
@@ -69,7 +143,7 @@ main {
     url(./assets/svg/Ellipse\ 19.svg);
   background-repeat: no-repeat;
   background-size: 24%, 20%;
-  background-position: 0% 3%, 100% 48%;
+  background-position: 0% 8%, 100% 48%;
 }
 
 .headline--title {
@@ -449,9 +523,10 @@ form > input[type]::placeholder,
 @media screen and (min-width: 992px) {
   header {
     position: fixed;
-    margin: 0;
+    height: 5.2rem;
+    padding-top: 3rem;
     top: 0;
-    z-index: 99;
+    z-index: 50;
     background-color: var(--background);
   }
 
@@ -463,21 +538,22 @@ form > input[type]::placeholder,
 
   header > a {
     padding-left: 15rem;
+    animation: rotate-logo 1s linear;
   }
 
-  .desktop--menu > a {
+  .topnav {
+    justify-content: space-around;
+  }
+
+  #desktop--nav--menu > a {
     margin: 0 1rem;
     font-size: 1.5rem;
     text-decoration: none;
   }
 
-  header a:hover {
+  #desktop--nav--menu > a:hover {
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
-  }
-
-  header a img {
-    animation: rotate-logo 1s linear;
   }
 
   @keyframes rotate-logo {
@@ -494,10 +570,13 @@ form > input[type]::placeholder,
     display: none;
   }
 
-  .desktop--menu {
+  #menu {
+    display: none;
+  }
+
+  #desktop--nav--menu {
     display: flex;
     align-items: center;
-    padding-right: 15rem;
   }
 
   main {
@@ -554,7 +633,7 @@ form > input[type]::placeholder,
   }
 
   .skills--container {
-    width: 33%;
+    width: 35%;
     height: auto;
     padding: 1rem;
     display: flex;
