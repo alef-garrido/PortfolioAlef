@@ -111,52 +111,65 @@ const generateSection = function() {
 
 generateSection();
 
-//PopUp Window container
-
-
+//Popullate Window contaiener
  for (let i = 0; i < winElements.length; i++) {
   const winTitle = document.getElementById('windowTitle');
   const winImg = document.getElementById('windowImage');
   const winSummary = document.getElementById('windowSummary');
+  const winBtn = document.getElementById('btn1');
+  const winBtn2 = document.getElementById('btn2');
+  
 
   switch (winElements[i].id) {
     case 1:
       winTitle.textContent = winElements[i].cardTitle;
       winImg.src = winElements[i].cardImg;
       winSummary.textContent = winElements[i].cardSummary;
+      winBtn.href = winElements[i].btn_1;
+      winBtn2.href = winElements[i].btn_2;
       break;
     case 2:
       winTitle.textContent = winElements[i].cardTitle;
       winImg.src = winElements[i].cardImg;
       winSummary.textContent = winElements[i].cardSummary;
+      winBtn.href = winElements[i].btn_1;
+      winBtn2.href = winElements[i].btn_2;
       break;
     case 3:
       winTitle.textContent = winElements[i].cardTitle;
       winImg.src = winElements[i].cardImg;
       winSummary.textContent = winElements[i].cardSummary;
+      winBtn.href = winElements[i].btn_1;
+      winBtn2.href = winElements[i].btn_2;
       break;
     case 4:
       winTitle.textContent = winElements[i].cardTitle;
       winImg.src = winElements[i].cardImg;
       winSummary.textContent = winElements[i].cardSummary;
+      winBtn.href = winElements[i].btn_1;
+      winBtn2.href = winElements[i].btn_2;
       break;
   }
 };
 
 //PopUp Window display
 const displayPopUp = () => {
-  const window = document.querySelector('.card-hidden');
-  if (window.style.display === 'flex') {
-    window.style.display = 'none';
-  } else {
-    window.style.display = 'flex';
-  };
+    const window = document.querySelector('.card-hidden');
+    if (window.style.display === 'flex') {
+      window.style.display = 'none';
+    } else {
+      window.style.display = 'flex';
+    };
 }
 
 const display = function(e) {
-const winBtns = document.querySelectorAll('.card--btn');
-const arrBtns = Array.from(winBtns);
-arrBtns.forEach((b) => b.addEventListener('click', e));
-document.querySelector('#closeCard').addEventListener('click', e);
-}
-display(displayPopUp);
+  const winBtns = document.querySelectorAll('.card--btn');
+  const arrBtns = Array.from(winBtns);
+  arrBtns.forEach((b) => b.addEventListener('click', e));
+  document.querySelector('#closeCard').addEventListener('click', e);
+  }
+ display(displayPopUp);
+
+
+
+ 
