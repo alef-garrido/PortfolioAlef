@@ -8,7 +8,5 @@ function toggleFunction() {
   }
 }
 
-function b() {
-  document.getElementById('close-button').addEventListener('click', toggleFunction());
-  document.getElementById('menu').addEventListener('click', toggleFunction());
-}
+document.getElementById('close-button').addEventListener('click', toggleFunction());
+document.getElementById('menu').addEventListener('click', toggleFunction());
