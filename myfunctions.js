@@ -169,7 +169,3 @@ const display = function(e) {
   document.querySelector('#closeCard').addEventListener('click', e);
   }
  display(displayPopUp);
-
-
-
- 
