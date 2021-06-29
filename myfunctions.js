@@ -85,9 +85,6 @@ for(let i = 0; i < winElements.length; i++) {
         winElements[i].tech.forEach((item) => {
         let techItem = document.createElement('li');
         techItem.textContent = item;
-        const techLine = document.createElement('img');
-        techLine.src = './assets/svg/Rectangle70.svg';
-        techItem.appendChild(techLine);
         techContainer.append(techItem)
       })
     }

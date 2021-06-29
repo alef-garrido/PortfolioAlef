@@ -312,10 +312,6 @@ main {
 }
 
 .-desktop {
-  display: none;
-}
-
-.-mobile {
   margin-top: 2rem;
   width: auto;
   display: grid;
@@ -751,11 +747,15 @@ form > input[type]::placeholder,
     line-height: 4.4rem;
   }
 
+  .recent--work--card:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  
   .card--thumbnail:nth-child(odd) {
     margin-right: 3rem;
   }
 
-  .card--thumbnail:nth-child(even) {
+  .recent--work--card:nth-child(even) > a > img  {
     margin-left: 3rem;
   }
 
