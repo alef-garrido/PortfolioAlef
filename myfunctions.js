@@ -103,8 +103,6 @@ for(let i = 0; i < winElements.length; i++) {
     contentContainer.append(cardTitle, cardSummary, techContainer, cardBtn);
     listItem.append(thumbnailContainer, contentContainer);
     container.append(listItem)
-    //desktop 
-
 }
 }
 

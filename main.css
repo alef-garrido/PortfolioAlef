@@ -369,6 +369,8 @@ main {
 
 .card--content ul {
   list-style: none;
+  display: flex;
+  align-content:flex-end;
 }
 
 .tech--container {
