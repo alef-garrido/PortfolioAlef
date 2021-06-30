@@ -21,8 +21,8 @@ const winElements = [
     cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
-    btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
-    btn_2:'https://github.com/alef-garrido/PortfolioAlef'
+    btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
+    btn_2: 'https://github.com/alef-garrido/PortfolioAlef',
   },
   {
     id: 2,
@@ -31,8 +31,8 @@ const winElements = [
     cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
-    btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
-    btn_2:'https://github.com/alef-garrido/PortfolioAlef'
+    btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
+    btn_2: 'https://github.com/alef-garrido/PortfolioAlef',
   },
   {
     id: 3,
@@ -41,8 +41,8 @@ const winElements = [
     cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
-    btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
-    btn_2:'https://github.com/alef-garrido/PortfolioAlef'
+    btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
+    btn_2: 'https://github.com/alef-garrido/PortfolioAlef',
   },
   {
     id: 4,
@@ -51,19 +51,17 @@ const winElements = [
     cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
-    btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
-    btn_2:'https://github.com/alef-garrido/PortfolioAlef'
+    btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
+    btn_2: 'https://github.com/alef-garrido/PortfolioAlef',
   },
 ];
 
-//Mobile 
-const generateSection = function() {
-//grab HTML container
-const container = document.querySelector('#projects-display-m');
-const container_md = document.querySelector('#projects-display-d');
+const generateSection = function () {
+// grab HTML container
+  const container = document.querySelector('#projects-display-m');
 
-//Populate Project Section
-for(let i = 0; i < winElements.length; i++) {
+  // Populate Project Section
+  for (let i = 0; i < winElements.length; i += 1) {
     const listItem = document.createElement('li');
 
     listItem.classList.add('recent--work--card');
@@ -85,13 +83,13 @@ for(let i = 0; i < winElements.length; i++) {
     const techContainer = document.createElement('ul');
     techContainer.classList.add('tech--container');
 
-    const techItems = function() {
-        winElements[i].tech.forEach((item) => {
-        let techItem = document.createElement('li');
+    const techItems = function () {
+      winElements[i].tech.forEach((item) => {
+        const techItem = document.createElement('li');
         techItem.textContent = item;
-        techContainer.append(techItem)
-      })
-    }
+        techContainer.append(techItem);
+      });
+    };
     techItems();
 
     const cardBtn = document.createElement('button');
@@ -99,25 +97,23 @@ for(let i = 0; i < winElements.length; i++) {
     cardBtn.classList.add('card--btn');
     cardBtn.textContent = 'See Project';
 
-    //Mobile display
+    // Mobile display
     thumbnailContainer.appendChild(thumbnail);
     contentContainer.append(cardTitle, cardSummary, techContainer, cardBtn);
     listItem.append(thumbnailContainer, contentContainer);
-    container.append(listItem)
-}
-}
+    container.append(listItem);
+  }
+};
 
 generateSection();
 
-
-//Popullate Window contaiener
-for (let i = 0; i < winElements.length; i++) {
+// Popullate Window contaiener
+for (let i = 0; i < winElements.length; i += 1) {
   const winTitle = document.getElementById('windowTitle');
   const winImg = document.getElementById('windowImage');
   const winSummary = document.getElementById('windowSummary');
   const winBtn = document.getElementById('btn1');
   const winBtn2 = document.getElementById('btn2');
-  
 
   switch (winElements[i].id) {
     case 1:
@@ -148,23 +144,29 @@ for (let i = 0; i < winElements.length; i++) {
       winBtn.href = winElements[i].btn_1;
       winBtn2.href = winElements[i].btn_2;
       break;
+    default:
+      winTitle.textContent = winElements[i].cardTitle;
+      winImg.src = winElements[i].cardImg2;
+      winSummary.textContent = winElements[i].cardSummary;
+      winBtn.href = winElements[i].btn_1;
+      winBtn2.href = winElements[i].btn_2;
+  }
+}
+
+// PopUp Window display
+const displayPopUp = () => {
+  const window = document.querySelector('.card-hidden');
+  if (window.style.display === 'flex') {
+    window.style.display = 'none';
+  } else {
+    window.style.display = 'flex';
   }
 };
 
-//PopUp Window display
-const displayPopUp = () => {
-    const window = document.querySelector('.card-hidden');
-    if (window.style.display === 'flex') {
-      window.style.display = 'none';
-    } else {
-      window.style.display = 'flex';
-    };
-}
-
-const display = function(e) {
+const display = function (e) {
   const winBtns = document.querySelectorAll('.card--btn');
   const arrBtns = Array.from(winBtns);
   arrBtns.forEach((b) => b.addEventListener('click', e));
   document.querySelector('#closeCard').addEventListener('click', e);
-  }
- display(displayPopUp);
+};
+display(displayPopUp);
