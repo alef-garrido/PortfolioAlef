@@ -18,6 +18,7 @@ const winElements = [
     id: 1,
     cardTitle: 'Multi.Post Stories',
     cardImg: './assets/img/Snapshoot-Portfolio.png',
+    cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
     btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
@@ -27,6 +28,7 @@ const winElements = [
     id: 2,
     cardTitle: 'Multi.Post Stories',
     cardImg: './assets/img/Snapshoot-Portfolio.png',
+    cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
     btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
@@ -36,6 +38,7 @@ const winElements = [
     id: 3,
     cardTitle: 'Multi.Post Stories',
     cardImg: './assets/img/Snapshoot-Portfolio.png',
+    cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
     btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
@@ -45,6 +48,7 @@ const winElements = [
     id: 4,
     cardTitle: 'Multi.Post Stories',
     cardImg: './assets/img/Snapshoot-Portfolio.png',
+    cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
     btn_1:'https://alef-garrido.github.io/PortfolioAlef/',
@@ -118,28 +122,28 @@ for (let i = 0; i < winElements.length; i++) {
   switch (winElements[i].id) {
     case 1:
       winTitle.textContent = winElements[i].cardTitle;
-      winImg.src = winElements[i].cardImg;
+      winImg.src = winElements[i].cardImg2;
       winSummary.textContent = winElements[i].cardSummary;
       winBtn.href = winElements[i].btn_1;
       winBtn2.href = winElements[i].btn_2;
       break;
     case 2:
       winTitle.textContent = winElements[i].cardTitle;
-      winImg.src = winElements[i].cardImg;
+      winImg.src = winElements[i].cardImg2;
       winSummary.textContent = winElements[i].cardSummary;
       winBtn.href = winElements[i].btn_1;
       winBtn2.href = winElements[i].btn_2;
       break;
     case 3:
       winTitle.textContent = winElements[i].cardTitle;
-      winImg.src = winElements[i].cardImg;
+      winImg.src = winElements[i].cardImg2;
       winSummary.textContent = winElements[i].cardSummary;
       winBtn.href = winElements[i].btn_1;
       winBtn2.href = winElements[i].btn_2;
       break;
     case 4:
       winTitle.textContent = winElements[i].cardTitle;
-      winImg.src = winElements[i].cardImg;
+      winImg.src = winElements[i].cardImg2;
       winSummary.textContent = winElements[i].cardSummary;
       winBtn.href = winElements[i].btn_1;
       winBtn2.href = winElements[i].btn_2;
