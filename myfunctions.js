@@ -17,8 +17,8 @@ const winElements = [
   {
     id: 1,
     cardTitle: 'Multi.Post Stories',
-    cardImg: './assets/img/Snapshoot-Portfolio.png',
-    cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
+    cardImg: './assets/img/SnapshootPortfolio.png',
+    cardImg2: './assets/img/SnapshootPortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
     btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
@@ -27,8 +27,8 @@ const winElements = [
   {
     id: 2,
     cardTitle: 'Multi.Post Stories',
-    cardImg: './assets/img/Snapshoot-Portfolio.png',
-    cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
+    cardImg: './assets/img/SnapshootPortfolio.png',
+    cardImg2: './assets/img/SnapshootPortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
     btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
@@ -37,8 +37,8 @@ const winElements = [
   {
     id: 3,
     cardTitle: 'Multi.Post Stories',
-    cardImg: './assets/img/Snapshoot-Portfolio.png',
-    cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
+    cardImg: './assets/img/SnapshootPortfolio.png',
+    cardImg2: './assets/img/SnapshootPortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
     btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
@@ -47,8 +47,8 @@ const winElements = [
   {
     id: 4,
     cardTitle: 'Multi.Post Stories',
-    cardImg: './assets/img/Snapshoot-Portfolio.png',
-    cardImg2: './assets/img/Snapshoot-PortfolioWin.png',
+    cardImg: './assets/img/SnapshootPortfolio.png',
+    cardImg2: './assets/img/SnapshootPortfolioWin.png',
     cardSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['Css', 'Html', 'Bootstrap', 'Ruby on rails'],
     btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
