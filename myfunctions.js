@@ -14,7 +14,7 @@ document.getElementById('menu').addEventListener('click', toggleFunction());
 // Set Dom elments for popUp Window
 
 const winElements = [
-  { 
+  {
     id: 1,
     cardTitle: 'Multi.Post Stories',
     cardImg: './assets/img/SnapshootPortfolio.png',
@@ -24,7 +24,7 @@ const winElements = [
     btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
     btn_2: 'https://github.com/alef-garrido/PortfolioAlef',
   },
-  { 
+  {
     id: 2,
     cardTitle: 'Multi.Post Stories',
     cardImg: './assets/img/SnapshootPortfolio.png',
@@ -34,7 +34,7 @@ const winElements = [
     btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
     btn_2: 'https://github.com/alef-garrido/PortfolioAlef',
   },
-  { 
+  {
     id: 3,
     cardTitle: 'Multi.Post Stories',
     cardImg: './assets/img/SnapshootPortfolio.png',
@@ -44,7 +44,7 @@ const winElements = [
     btn_1: 'https://alef-garrido.github.io/PortfolioAlef/',
     btn_2: 'https://github.com/alef-garrido/PortfolioAlef',
   },
-  { 
+  {
     id: 4,
     cardTitle: 'Multi.Post Stories',
     cardImg: './assets/img/SnapshootPortfolio.png',
@@ -119,7 +119,7 @@ for (let i = 0; i < winElements.length; i += 1) {
     case 1:
       winTitle.textContent = winElements[i].cardTitle;
       winImg.src = winElements[i].cardImg2;
-      winImg.alt = "Project Thumbnail";
+      winImg.alt = 'Project Thumbnail';
       winSummary.textContent = winElements[i].cardSummary;
       winBtn.href = winElements[i].btn_1;
       winBtn2.href = winElements[i].btn_2;
@@ -127,7 +127,7 @@ for (let i = 0; i < winElements.length; i += 1) {
     case 2:
       winTitle.textContent = winElements[i].cardTitle;
       winImg.src = winElements[i].cardImg2;
-      winImg.alt = "Project Thumbnail";
+      winImg.alt = 'Project Thumbnail';
       winSummary.textContent = winElements[i].cardSummary;
       winBtn.href = winElements[i].btn_1;
       winBtn2.href = winElements[i].btn_2;
@@ -135,7 +135,7 @@ for (let i = 0; i < winElements.length; i += 1) {
     case 3:
       winTitle.textContent = winElements[i].cardTitle;
       winImg.src = winElements[i].cardImg2;
-      winImg.alt = "Project Thumbnail";
+      winImg.alt = 'Project Thumbnail';
       winSummary.textContent = winElements[i].cardSummary;
       winBtn.href = winElements[i].btn_1;
       winBtn2.href = winElements[i].btn_2;
@@ -143,7 +143,7 @@ for (let i = 0; i < winElements.length; i += 1) {
     case 4:
       winTitle.textContent = winElements[i].cardTitle;
       winImg.src = winElements[i].cardImg2;
-      winImg.alt = "Project Thumbnail";
+      winImg.alt = 'Project Thumbnail';
       winSummary.textContent = winElements[i].cardSummary;
       winBtn.href = winElements[i].btn_1;
       winBtn2.href = winElements[i].btn_2;
@@ -151,7 +151,7 @@ for (let i = 0; i < winElements.length; i += 1) {
     default:
       winTitle.textContent = winElements[i].cardTitle;
       winImg.src = winElements[i].cardImg2;
-      winImg.alt = "Project Thumbnail";
+      winImg.alt = 'Project Thumbnail';
       winSummary.textContent = winElements[i].cardSummary;
       winBtn.href = winElements[i].btn_1;
       winBtn2.href = winElements[i].btn_2;
