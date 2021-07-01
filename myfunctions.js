@@ -12,7 +12,6 @@ document.getElementById('close-button').addEventListener('click', toggleFunction
 document.getElementById('menu').addEventListener('click', toggleFunction());
 
 // Set Dom elments for popUp Window
-
 const winElements = [
   {
     id: 1,
@@ -104,7 +103,6 @@ const generateSection = function () {
     container.append(listItem);
   }
 };
-
 generateSection();
 
 // Popullate Window contaiener
@@ -175,3 +173,45 @@ const display = function (e) {
   document.querySelector('#closeCard').addEventListener('click', e);
 };
 display(displayPopUp);
+
+// Form Validation Task
+const contactForm = document.getElementById('contact');
+const inputEmail = document.querySelector('#formEmail');
+const inputSubmit = document.querySelector('#submitContainer');
+
+const showError = (input, mssg) => {
+  const formField = input.parentElement;
+  const error = formField.querySelector('small');
+  error.textContent = mssg;
+};
+
+const errorHint = (input, mssg) => {
+  const inputField = input.parentElement;
+  const error = inputField.querySelector('small');
+  error.textContent = mssg;
+};
+
+const checkEmail = () => {
+  let valid = false;
+  const email = inputEmail.value.trim();
+  if (email !== email.toLowerCase()) {
+    showError(inputEmail, 'Email not valid');
+  } else {
+    valid = true;
+    inputEmail.classList.remove('error');
+  }
+  return valid;
+};
+
+const formSubmit = (e) => {
+  if (!checkEmail()) {
+    e.preventDefault();
+    inputEmail.classList.add('error');
+    errorHint(inputSubmit, 'Email should be in lowercase');
+  } else {
+    inputEmail.classList.remove('error');
+  }
+};
+
+inputEmail.addEventListener('input', checkEmail);
+contactForm.addEventListener('submit', (event) => formSubmit(event));
