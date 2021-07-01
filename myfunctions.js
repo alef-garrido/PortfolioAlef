@@ -177,13 +177,9 @@ display(displayPopUp);
 // Form Validation Task
 const contactForm = document.getElementById('contact');
 const inputEmail = document.querySelector('#formEmail');
-const inputContainer = document.getElementById('emailContainer');
 
 const showError = (input, mssg) => {
   const formField = input.parentElement;
-  // formField.classList.remove('success');
-  // formField.classList.add('error');
-
   const error = formField.querySelector('small');
   error.textContent = mssg;
 };
@@ -195,6 +191,7 @@ const checkEmail = () => {
     showError(inputEmail, 'Email not valid');
   } else {
     valid = true;
+    inputEmail.classList.remove('error');
   }
   return valid;
 };
@@ -202,9 +199,11 @@ const checkEmail = () => {
 const formSubmit = (e) => {
   if (!checkEmail()) {
     e.preventDefault();
-    inputEmail.classList.add('error')
+    inputEmail.classList.add('error');
+  } else {
+    inputEmail.classList.remove('error');
   }
-}
+};
 
 inputEmail.addEventListener('input', checkEmail);
-contactForm.addEventListener('submit', (event) => formSubmit(event))
+contactForm.addEventListener('submit', (event) => formSubmit(event));
