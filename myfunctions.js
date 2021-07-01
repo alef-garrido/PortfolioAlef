@@ -177,11 +177,12 @@ display(displayPopUp);
 // Form Validation Task
 const contactForm = document.getElementById('contact');
 const inputEmail = document.querySelector('#formEmail');
+const inputContainer = document.getElementById('emailContainer');
 
 const showError = (input, mssg) => {
   const formField = input.parentElement;
-  formField.classList.remove('success');
-  formField.classList.add('error');
+  // formField.classList.remove('success');
+  // formField.classList.add('error');
 
   const error = formField.querySelector('small');
   error.textContent = mssg;
@@ -198,9 +199,12 @@ const checkEmail = () => {
   return valid;
 };
 
-inputEmail.addEventListener('input', checkEmail);
-contactForm.addEventListener('submit', (event) => {
-  if (!checkEmail) {
-    event.preventDefault();
+const formSubmit = (e) => {
+  if (!checkEmail()) {
+    e.preventDefault();
+    inputEmail.classList.add('error')
   }
-});
+}
+
+inputEmail.addEventListener('input', checkEmail);
+contactForm.addEventListener('submit', (event) => formSubmit(event))

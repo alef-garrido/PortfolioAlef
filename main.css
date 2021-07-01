@@ -505,18 +505,6 @@ form > h3 {
 
 /* Contact Section */
 
-.success {
-  border-color: yellowgreen;
-  border-width: 2px;
-  border-style: solid;
-}
-
-.error {
-  border-color: var(--error);
-  border-width: 2px;
-  border-style: solid;
-}
-
 .form--container {
   display: flex;
   flex-direction: column;
@@ -620,6 +608,10 @@ label {
   outline: 0;
   border: 4px solid rgb(250, 37, 232);
   padding-left: 2rem;
+}
+
+.error {
+  border: solid 3px var(--error);
 }
 
 /* FOOTER SECTION */
