@@ -614,6 +614,17 @@ label {
   border: solid 3px var(--error);
 }
 
+#buttonDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttonDisplay > small {
+  margin: 1rem 0;
+}
+
 /* FOOTER SECTION */
 
 .footer--section hr {

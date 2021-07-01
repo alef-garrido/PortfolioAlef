@@ -177,12 +177,19 @@ display(displayPopUp);
 // Form Validation Task
 const contactForm = document.getElementById('contact');
 const inputEmail = document.querySelector('#formEmail');
+const inputSubmit = document.querySelector('#submitContainer');
 
 const showError = (input, mssg) => {
   const formField = input.parentElement;
   const error = formField.querySelector('small');
   error.textContent = mssg;
 };
+
+const errorHint = (input, mssg) => {
+  const inputField = input.parentElement;
+  const error = inputField.querySelector('small');
+  error.textContent = mssg;
+}
 
 const checkEmail = () => {
   let valid = false;
@@ -200,6 +207,7 @@ const formSubmit = (e) => {
   if (!checkEmail()) {
     e.preventDefault();
     inputEmail.classList.add('error');
+    errorHint(inputSubmit, 'Email should be in lowercase');
   } else {
     inputEmail.classList.remove('error');
   }
