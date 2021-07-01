@@ -200,9 +200,7 @@ const showError = (input, mssg) => {
 
 inputEmail.addEventListener('input', checkEmail);
 contactForm.addEventListener('submit', function(event) {
-  if(checkEmail) {
-    console.log(checkEmail)
-    showError(inputEmail, 'Email not valid');
+  if(!checkEmail) {
     event.preventDefault();
   }
 });
