@@ -183,18 +183,30 @@
         </div>        
 <!-- Contact Section-->
         <section id="contact" class="form--container">
-            <h3>Let's Chat!</h3>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-            <form action="https://bit.ly/3cskIom" method="post">
+            <form 
+              id="contact"
+              action="https://formspree.io/f/mbjqkadw" 
+              method="POST" 
+              >
+              <h3>Let's Chat!</h3>
+              <p class="formP">
+                If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
+              </p>
+              <div class="fieldValidation">
                 <label for="name">User Name</label>
-                    <input class="form--field" type="text" id="name" name="user-name" placeholder="Name" maxlength="30" required>
+                <small></small>
+                <input type="text" class="form--field" id="formName" name="user-name" placeholder="Name" maxlength="30" required>
+              </div>
+              <div class="fieldValidation">
                 <label for="mail">User Email</label>
-                    <input class="form--field" type="email" id="mail" name="user-email" placeholder="youremail@example.com" required>
-                <label for="msg">User message</label>
-                <textarea  class="form--textarea" id="msg" name="user-message" placeholder="Say hi!"  maxlength="500" required></textarea>
-                <button class="button" type="submit">
-                    Send
-                </button>        
+                <small></small>
+                <input class="form--field" type="email" id="formEmail" name="user-email" placeholder="youremail@example.com" required>
+              </div>
+              <label for="msg">User message</label>
+              <textarea  class="form--textarea" id="msg" name="user-message" placeholder="Say hi!"  maxlength="500" required></textarea>
+              <button type="submit" class="formButton">
+                Send
+              </button>       
             </form>
         </section>
       </main>
