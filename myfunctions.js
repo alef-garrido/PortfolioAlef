@@ -178,17 +178,6 @@ display(displayPopUp);
 const contactForm = document.getElementById('contact');
 const inputEmail = document.querySelector('#formEmail');
 
-const checkEmail = () => {
-  let valid = false;
-  const email = inputEmail.value.trim();
-  if (email!== email.toLowerCase()) {
-    showError(inputEmail, 'Email not valid');
-  } else {
-    valid = true;
-  }
-  return valid;
-}
-
 const showError = (input, mssg) => {
   const formField = input.parentElement;
   formField.classList.remove('success');
@@ -196,11 +185,22 @@ const showError = (input, mssg) => {
 
   const error = formField.querySelector('small');
   error.textContent = mssg;
-}
+};
+
+const checkEmail = () => {
+  let valid = false;
+  const email = inputEmail.value.trim();
+  if (email !== email.toLowerCase()) {
+    showError(inputEmail, 'Email not valid');
+  } else {
+    valid = true;
+  }
+  return valid;
+};
 
 inputEmail.addEventListener('input', checkEmail);
-contactForm.addEventListener('submit', function(event) {
-  if(!checkEmail) {
+contactForm.addEventListener('submit', (event) => {
+  if (!checkEmail) {
     event.preventDefault();
   }
 });
