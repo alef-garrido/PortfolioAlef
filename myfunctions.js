@@ -189,7 +189,7 @@ const errorHint = (input, mssg) => {
   const inputField = input.parentElement;
   const error = inputField.querySelector('small');
   error.textContent = mssg;
-}
+};
 
 const checkEmail = () => {
   let valid = false;
